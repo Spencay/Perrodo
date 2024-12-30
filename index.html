@@ -1,0 +1,3266 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_05f524781faed2885a2edeb529d680fa {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_05f524781faed2885a2edeb529d680fa" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_05f524781faed2885a2edeb529d680fa = L.map(
+                "map_05f524781faed2885a2edeb529d680fa",
+                {
+                    center: [25.165817017045455, -19.31641750135785],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f3c4780ec424f3556c2760d2719cc55c = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_f3c4780ec424f3556c2760d2719cc55c.addTo(map_05f524781faed2885a2edeb529d680fa);
+        
+    
+            var marker_cluster_ac9e00f33df0dea406c415a4b1fa3f85 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_4b7f2408c9ce07fd2aaaefa5d810535e = L.marker(
+                [50.6868972, -2.1098377],
+                {
+}
+            ).addTo(marker_cluster_ac9e00f33df0dea406c415a4b1fa3f85);
+        
+    
+            var icon_a18cf65023c9f999abaf0a94231a8fe2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_4b7f2408c9ce07fd2aaaefa5d810535e.setIcon(icon_a18cf65023c9f999abaf0a94231a8fe2);
+        
+    
+        var popup_c07cff282d2a910d74faee0fbd5fbb7e = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_e4ebd68a25c08c9010d1d804d3d8e8b2 = $(`<div id="html_e4ebd68a25c08c9010d1d804d3d8e8b2" style="width: 100.0%; height: 100.0%;"><b>PERENCO UK LIMITED</b><br>WAREHAM, United Kingdom<br>Petroleum and Coal Products Manufacturing<br>Subsidiary<br>Membres impliqués :<br><ul><li>François Perrodo</li></ul><a href="https://www.dnb.com/site-search-results.html#BusinessDirectoryPageNumber=1&BusinessDirectorySearch=perenco&ContactDirectoryPageNumber=1&MarketplacePageNumber=1&SiteContentPageNumber=1&tab=Business%20Directory" target="_blank">Lien hypertexte</a></div>`)[0];
+                popup_c07cff282d2a910d74faee0fbd5fbb7e.setContent(html_e4ebd68a25c08c9010d1d804d3d8e8b2);
+            
+        
+
+        marker_4b7f2408c9ce07fd2aaaefa5d810535e.bindPopup(popup_c07cff282d2a910d74faee0fbd5fbb7e)
+        ;
+
+        
+    
+    
+            var marker_a0f6bc47d506070eca6c5e4ee9a9d885 = L.marker(
+                [51.4893335, -0.14405508452768728],
+                {
+}
+            ).addTo(marker_cluster_ac9e00f33df0dea406c415a4b1fa3f85);
+        
+    
+            var icon_866a78fc6cdc35aa942cba872c9ac569 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_a0f6bc47d506070eca6c5e4ee9a9d885.setIcon(icon_866a78fc6cdc35aa942cba872c9ac569);
+        
+    
+        var popup_4316d05e59ca190ad58a4b5d621fa0ae = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_23f54b936fab3b3b1ada09aa8088dfed = $(`<div id="html_23f54b936fab3b3b1ada09aa8088dfed" style="width: 100.0%; height: 100.0%;"><b>PERENCO OVERSEAS HOLDINGS LIMITED</b><br>LONDON, United Kingdom<br>Management of Companies and Enterprises<br>Parent<br>Membres impliqués :<br><ul><li>François Perrodo</li></ul><a href="https://www.dnb.com/site-search-results.html#BusinessDirectoryPageNumber=1&BusinessDirectorySearch=perenco&ContactDirectoryPageNumber=1&MarketplacePageNumber=1&SiteContentPageNumber=1&tab=Business%20Directory" target="_blank">Lien hypertexte</a></div>`)[0];
+                popup_4316d05e59ca190ad58a4b5d621fa0ae.setContent(html_23f54b936fab3b3b1ada09aa8088dfed);
+            
+        
+
+        marker_a0f6bc47d506070eca6c5e4ee9a9d885.bindPopup(popup_4316d05e59ca190ad58a4b5d621fa0ae)
+        ;
+
+        
+    
+    
+            var marker_f27b3a552ed7e42b539464493b45d2e2 = L.marker(
+                [55.9533456, -3.1883749],
+                {
+}
+            ).addTo(marker_cluster_ac9e00f33df0dea406c415a4b1fa3f85);
+        
+    
+            var icon_2341cea8062239f7484d65abcae34480 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_f27b3a552ed7e42b539464493b45d2e2.setIcon(icon_2341cea8062239f7484d65abcae34480);
+        
+    
+        var popup_2d4d74989bf859a18e7a0dd88b5bf0b5 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_1983caf89557218318b74dd48c4de6ea = $(`<div id="html_1983caf89557218318b74dd48c4de6ea" style="width: 100.0%; height: 100.0%;"><b>PERENCO ENERGIES INTERNATIONAL LIMITED</b><br>EDINBURGH, United Kingdom<br>Management of Companies and Enterprises<br>Subsidiary<br>Membres impliqués :<br><ul><li>François Perrodo</li></ul><a href="https://www.dnb.com/site-search-results.html#BusinessDirectoryPageNumber=1&BusinessDirectorySearch=perenco&ContactDirectoryPageNumber=1&MarketplacePageNumber=1&SiteContentPageNumber=1&tab=Business%20Directory" target="_blank">Lien hypertexte</a></div>`)[0];
+                popup_2d4d74989bf859a18e7a0dd88b5bf0b5.setContent(html_1983caf89557218318b74dd48c4de6ea);
+            
+        
+
+        marker_f27b3a552ed7e42b539464493b45d2e2.bindPopup(popup_2d4d74989bf859a18e7a0dd88b5bf0b5)
+        ;
+
+        
+    
+    
+            var marker_900188ae898d66414f9088dee61a810b = L.marker(
+                [48.8588897, 2.3200410217200766],
+                {
+}
+            ).addTo(marker_cluster_ac9e00f33df0dea406c415a4b1fa3f85);
+        
+    
+            var icon_562805f07bb227981b677d26a61df753 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_900188ae898d66414f9088dee61a810b.setIcon(icon_562805f07bb227981b677d26a61df753);
+        
+    
+        var popup_727328bf464030d335c700f4b10bcb05 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_696d823940e32e5f5b197c40fe84bcf6 = $(`<div id="html_696d823940e32e5f5b197c40fe84bcf6" style="width: 100.0%; height: 100.0%;"><b>PERENCO</b><br>PARIS, ILE DE FRANCE, France<br>Support Activities for Mining<br>Parent<br>Membres impliqués :<br><ul><li>François Perrodo</li></ul><a href="https://www.dnb.com/site-search-results.html#BusinessDirectoryPageNumber=1&BusinessDirectorySearch=perenco&ContactDirectoryPageNumber=1&MarketplacePageNumber=1&SiteContentPageNumber=1&tab=Business%20Directory" target="_blank">Lien hypertexte</a></div>`)[0];
+                popup_727328bf464030d335c700f4b10bcb05.setContent(html_696d823940e32e5f5b197c40fe84bcf6);
+            
+        
+
+        marker_900188ae898d66414f9088dee61a810b.bindPopup(popup_727328bf464030d335c700f4b10bcb05)
+        ;
+
+        
+    
+    
+            var marker_fc1f5544dc3861d7e12b0bb94554855a = L.marker(
+                [51.4893335, -0.14405508452768728],
+                {
+}
+            ).addTo(marker_cluster_ac9e00f33df0dea406c415a4b1fa3f85);
+        
+    
+            var icon_31d7560ac5d7df10c56116dbceb609e9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_fc1f5544dc3861d7e12b0bb94554855a.setIcon(icon_31d7560ac5d7df10c56116dbceb609e9);
+        
+    
+        var popup_99b84f4d1a2536a78c193b8a800025b6 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_71efb242e346c6787a5ea824a239add2 = $(`<div id="html_71efb242e346c6787a5ea824a239add2" style="width: 100.0%; height: 100.0%;"><b>PERENCO CUU LONG LIMITED</b><br>LONDON, United Kingdom<br>Oil and Gas Extraction<br>Subsidiary<br>Membres impliqués :<br><ul><li>François Perrodo</li></ul><a href="https://www.dnb.com/site-search-results.html#BusinessDirectoryPageNumber=1&BusinessDirectorySearch=perenco&ContactDirectoryPageNumber=1&MarketplacePageNumber=1&SiteContentPageNumber=1&tab=Business%20Directory" target="_blank">Lien hypertexte</a></div>`)[0];
+                popup_99b84f4d1a2536a78c193b8a800025b6.setContent(html_71efb242e346c6787a5ea824a239add2);
+            
+        
+
+        marker_fc1f5544dc3861d7e12b0bb94554855a.bindPopup(popup_99b84f4d1a2536a78c193b8a800025b6)
+        ;
+
+        
+    
+    
+            var marker_d97b79a6ed046458315e588b76279089 = L.marker(
+                [4.6533816, -74.0836333],
+                {
+}
+            ).addTo(marker_cluster_ac9e00f33df0dea406c415a4b1fa3f85);
+        
+    
+            var icon_b39ab6c2a66722ba98eb97607814c3ed = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_d97b79a6ed046458315e588b76279089.setIcon(icon_b39ab6c2a66722ba98eb97607814c3ed);
+        
+    
+        var popup_9e59eb8e83c2f35060bd6d25ce9d20e2 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_851a5d8dc33fb85ab863cbd71e68ad07 = $(`<div id="html_851a5d8dc33fb85ab863cbd71e68ad07" style="width: 100.0%; height: 100.0%;"><b>PERENCO COLOMBIA LIMITEDPERENCO COLOMBIA LIMITED</b><br>BOGOTA, Distrito Capital de Bogota, Colombia<br>Oil and Gas Extraction<br>Parent<br>Membres impliqués :<br><ul><li>François Perrodo</li></ul><a href="https://www.dnb.com/site-search-results.html#BusinessDirectoryPageNumber=1&BusinessDirectorySearch=perenco&ContactDirectoryPageNumber=1&MarketplacePageNumber=1&SiteContentPageNumber=1&tab=Business%20Directory" target="_blank">Lien hypertexte</a></div>`)[0];
+                popup_9e59eb8e83c2f35060bd6d25ce9d20e2.setContent(html_851a5d8dc33fb85ab863cbd71e68ad07);
+            
+        
+
+        marker_d97b79a6ed046458315e588b76279089.bindPopup(popup_9e59eb8e83c2f35060bd6d25ce9d20e2)
+        ;
+
+        
+    
+    
+            var marker_2c71a584941e2daac662048a920650d8 = L.marker(
+                [51.4893335, -0.14405508452768728],
+                {
+}
+            ).addTo(marker_cluster_ac9e00f33df0dea406c415a4b1fa3f85);
+        
+    
+            var icon_15ef44288849f73d1f6e4430fb32c4b9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_2c71a584941e2daac662048a920650d8.setIcon(icon_15ef44288849f73d1f6e4430fb32c4b9);
+        
+    
+        var popup_d3e96fab80daff8f7ea923d02d7aeb8c = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_cad22aee89ecc110c555e2539f826034 = $(`<div id="html_cad22aee89ecc110c555e2539f826034" style="width: 100.0%; height: 100.0%;"><b>PERENCO HOLDINGS</b><br>LONDON, United Kingdom<br>Management of Companies and Enterprises<br>Subsidiary<br>Membres impliqués :<br><ul><li>François Perrodo</li></ul><a href="https://www.dnb.com/site-search-results.html#BusinessDirectoryPageNumber=1&BusinessDirectorySearch=perenco&ContactDirectoryPageNumber=1&MarketplacePageNumber=1&SiteContentPageNumber=1&tab=Business%20Directory" target="_blank">Lien hypertexte</a></div>`)[0];
+                popup_d3e96fab80daff8f7ea923d02d7aeb8c.setContent(html_cad22aee89ecc110c555e2539f826034);
+            
+        
+
+        marker_2c71a584941e2daac662048a920650d8.bindPopup(popup_d3e96fab80daff8f7ea923d02d7aeb8c)
+        ;
+
+        
+    
+    
+            var marker_f4eecfea87438d2365e3b3c7dd504659 = L.marker(
+                [51.4893335, -0.14405508452768728],
+                {
+}
+            ).addTo(marker_cluster_ac9e00f33df0dea406c415a4b1fa3f85);
+        
+    
+            var icon_1717dae0a8756d3da9cdf70ac6ec4fd4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_f4eecfea87438d2365e3b3c7dd504659.setIcon(icon_1717dae0a8756d3da9cdf70ac6ec4fd4);
+        
+    
+        var popup_9232a35b1a5e0999955422d44fd77778 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_7f7ac79d8fa410b93c5ad766597a8290 = $(`<div id="html_7f7ac79d8fa410b93c5ad766597a8290" style="width: 100.0%; height: 100.0%;"><b>BATAVIA OIL RANG DONG LTD</b><br>LONDON, United Kingdom<br>Oil and Gas Extraction<br>Subsidiary<br>Membres impliqués :<br><ul><li>François Perrodo</li></ul><a href="https://www.dnb.com/site-search-results.html#BusinessDirectoryPageNumber=1&BusinessDirectorySearch=perenco&ContactDirectoryPageNumber=1&MarketplacePageNumber=1&SiteContentPageNumber=1&tab=Business%20Directory" target="_blank">Lien hypertexte</a></div>`)[0];
+                popup_9232a35b1a5e0999955422d44fd77778.setContent(html_7f7ac79d8fa410b93c5ad766597a8290);
+            
+        
+
+        marker_f4eecfea87438d2365e3b3c7dd504659.bindPopup(popup_9232a35b1a5e0999955422d44fd77778)
+        ;
+
+        
+    
+    
+            var marker_2d51972443ccfa47a2c5b19ac876e375 = L.marker(
+                [10.6572678, -61.5180173],
+                {
+}
+            ).addTo(marker_cluster_ac9e00f33df0dea406c415a4b1fa3f85);
+        
+    
+            var icon_2910485632e233e448e4a336a3173bd7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_2d51972443ccfa47a2c5b19ac876e375.setIcon(icon_2910485632e233e448e4a336a3173bd7);
+        
+    
+        var popup_238df584848dc06dc3bfd630c273cd91 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_207b2da1114d618f21429e73942be809 = $(`<div id="html_207b2da1114d618f21429e73942be809" style="width: 100.0%; height: 100.0%;"><b>Perenco T&T Limited</b><br>Port of Spain, Trinidad and Tobago<br>Oil and Gas Extraction<br>Subsidiary<br>Membres impliqués :<br><ul><li>François Perrodo</li></ul><a href="https://www.dnb.com/site-search-results.html#BusinessDirectoryPageNumber=1&BusinessDirectorySearch=perenco&ContactDirectoryPageNumber=1&MarketplacePageNumber=1&SiteContentPageNumber=1&tab=Business%20Directory" target="_blank">Lien hypertexte</a></div>`)[0];
+                popup_238df584848dc06dc3bfd630c273cd91.setContent(html_207b2da1114d618f21429e73942be809);
+            
+        
+
+        marker_2d51972443ccfa47a2c5b19ac876e375.bindPopup(popup_238df584848dc06dc3bfd630c273cd91)
+        ;
+
+        
+    
+    
+            var marker_7bb7de6dcf7bb3b5b5f1bef175577ee5 = L.marker(
+                [4.6533816, -74.0836333],
+                {
+}
+            ).addTo(marker_cluster_ac9e00f33df0dea406c415a4b1fa3f85);
+        
+    
+            var icon_e95567d301fe08f5844ce93d615c4c35 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_7bb7de6dcf7bb3b5b5f1bef175577ee5.setIcon(icon_e95567d301fe08f5844ce93d615c4c35);
+        
+    
+        var popup_42b5f147e06205c2ea8a3eacf63389c3 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_2bc9c756dd999fc00886c06422e81713 = $(`<div id="html_2bc9c756dd999fc00886c06422e81713" style="width: 100.0%; height: 100.0%;"><b>PERENCO OIL AND GAS COLOMBIA LIMITEDPERENCO OIL AND GAS COLOMBIA LIMITED</b><br>BOGOTA, Distrito Capital de Bogota, Colombia<br>Oil and Gas Extraction<br>Branch<br>Membres impliqués :<br><ul><li>François Perrodo</li></ul><a href="https://www.dnb.com/site-search-results.html#BusinessDirectoryPageNumber=1&BusinessDirectorySearch=perenco&ContactDirectoryPageNumber=1&MarketplacePageNumber=1&SiteContentPageNumber=1&tab=Business%20Directory" target="_blank">Lien hypertexte</a></div>`)[0];
+                popup_42b5f147e06205c2ea8a3eacf63389c3.setContent(html_2bc9c756dd999fc00886c06422e81713);
+            
+        
+
+        marker_7bb7de6dcf7bb3b5b5f1bef175577ee5.bindPopup(popup_42b5f147e06205c2ea8a3eacf63389c3)
+        ;
+
+        
+    
+    
+            var marker_705fb1bc362e03b72e5357dbe4e1ecef = L.marker(
+                [51.4893335, -0.14405508452768728],
+                {
+}
+            ).addTo(marker_cluster_ac9e00f33df0dea406c415a4b1fa3f85);
+        
+    
+            var icon_35749877471b49941b1dd473ddd02dd6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_705fb1bc362e03b72e5357dbe4e1ecef.setIcon(icon_35749877471b49941b1dd473ddd02dd6);
+        
+    
+        var popup_867cff3d7dfc546b82471a05ef9ec249 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_d831322f895e43f4a11136fe365c04b6 = $(`<div id="html_d831322f895e43f4a11136fe365c04b6" style="width: 100.0%; height: 100.0%;"><b>PERENCO OIL AND GAS COLOMBIA LIMITED</b><br>LONDON, United Kingdom<br>Oil and Gas Extraction<br>Subsidiary<br>Membres impliqués :<br><ul><li>François Perrodo</li></ul><a href="https://www.dnb.com/site-search-results.html#BusinessDirectoryPageNumber=1&BusinessDirectorySearch=perenco&ContactDirectoryPageNumber=1&MarketplacePageNumber=1&SiteContentPageNumber=1&tab=Business%20Directory" target="_blank">Lien hypertexte</a></div>`)[0];
+                popup_867cff3d7dfc546b82471a05ef9ec249.setContent(html_d831322f895e43f4a11136fe365c04b6);
+            
+        
+
+        marker_705fb1bc362e03b72e5357dbe4e1ecef.bindPopup(popup_867cff3d7dfc546b82471a05ef9ec249)
+        ;
+
+        
+    
+    
+            var marker_e553e7910949282d0f8bb646d5b7e7df = L.marker(
+                [51.4893335, -0.14405508452768728],
+                {
+}
+            ).addTo(marker_cluster_ac9e00f33df0dea406c415a4b1fa3f85);
+        
+    
+            var icon_14e8ab4dbc2a9cc8ce2b405828943f92 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_e553e7910949282d0f8bb646d5b7e7df.setIcon(icon_14e8ab4dbc2a9cc8ce2b405828943f92);
+        
+    
+        var popup_8dca3670ad2d77a4d0a099196f551ea1 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_ce69b435d081d6afc920547955111d75 = $(`<div id="html_ce69b435d081d6afc920547955111d75" style="width: 100.0%; height: 100.0%;"><b>PERENCO GAS (UK) LIMITED</b><br>LONDON, United Kingdom<br>Support Activities for Mining<br>Subsidiary<br>Membres impliqués :<br><ul><li>François Perrodo</li></ul><a href="https://www.dnb.com/site-search-results.html#BusinessDirectoryPageNumber=1&BusinessDirectorySearch=perenco&ContactDirectoryPageNumber=1&MarketplacePageNumber=1&SiteContentPageNumber=1&tab=Business%20Directory" target="_blank">Lien hypertexte</a></div>`)[0];
+                popup_8dca3670ad2d77a4d0a099196f551ea1.setContent(html_ce69b435d081d6afc920547955111d75);
+            
+        
+
+        marker_e553e7910949282d0f8bb646d5b7e7df.bindPopup(popup_8dca3670ad2d77a4d0a099196f551ea1)
+        ;
+
+        
+    
+    
+            var marker_57fddb7c459c92c79e19f73107af750a = L.marker(
+                [55.9533456, -3.1883749],
+                {
+}
+            ).addTo(marker_cluster_ac9e00f33df0dea406c415a4b1fa3f85);
+        
+    
+            var icon_f167c67cc95e0cbf62848c408b99db4a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_57fddb7c459c92c79e19f73107af750a.setIcon(icon_f167c67cc95e0cbf62848c408b99db4a);
+        
+    
+        var popup_dbdac10b596f7829bb238ef41a66b389 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_f4c8a664a787ee26341a38e62aa6e414 = $(`<div id="html_f4c8a664a787ee26341a38e62aa6e414" style="width: 100.0%; height: 100.0%;"><b>PERENCO NORTH SEA LIMITED</b><br>EDINBURGH, United Kingdom<br>Oil and Gas Extraction<br>Subsidiary<br>Membres impliqués :<br><ul><li>François Perrodo</li></ul><a href="https://www.dnb.com/site-search-results.html#BusinessDirectoryPageNumber=1&BusinessDirectorySearch=perenco&ContactDirectoryPageNumber=1&MarketplacePageNumber=1&SiteContentPageNumber=1&tab=Business%20Directory" target="_blank">Lien hypertexte</a></div>`)[0];
+                popup_dbdac10b596f7829bb238ef41a66b389.setContent(html_f4c8a664a787ee26341a38e62aa6e414);
+            
+        
+
+        marker_57fddb7c459c92c79e19f73107af750a.bindPopup(popup_dbdac10b596f7829bb238ef41a66b389)
+        ;
+
+        
+    
+    
+            var marker_953920718822950f7ac3acc0dff4253c = L.marker(
+                [17.9884657, -92.9366326],
+                {
+}
+            ).addTo(marker_cluster_ac9e00f33df0dea406c415a4b1fa3f85);
+        
+    
+            var icon_c9e3f9616894c0dc409e7bab3677295d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_953920718822950f7ac3acc0dff4253c.setIcon(icon_c9e3f9616894c0dc409e7bab3677295d);
+        
+    
+        var popup_706877af6f1d0851bfefbbf49a897623 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_62ac761bda51ce02f571b81d3241ecd5 = $(`<div id="html_62ac761bda51ce02f571b81d3241ecd5" style="width: 100.0%; height: 100.0%;"><b>Perenco México, S.A. de C.V.</b><br>Villahermosa, TABASCO, Mexico<br>Support Activities for Mining<br>Subsidiary<br>Membres impliqués :<br><ul><li>François Perrodo</li></ul><a href="https://www.dnb.com/site-search-results.html#BusinessDirectoryPageNumber=1&BusinessDirectorySearch=perenco&ContactDirectoryPageNumber=1&MarketplacePageNumber=1&SiteContentPageNumber=1&tab=Business%20Directory" target="_blank">Lien hypertexte</a></div>`)[0];
+                popup_706877af6f1d0851bfefbbf49a897623.setContent(html_62ac761bda51ce02f571b81d3241ecd5);
+            
+        
+
+        marker_953920718822950f7ac3acc0dff4253c.bindPopup(popup_706877af6f1d0851bfefbbf49a897623)
+        ;
+
+        
+    
+    
+            var marker_be84fcb2694ecaacc8a0ba55a1b33639 = L.marker(
+                [51.4893335, -0.14405508452768728],
+                {
+}
+            ).addTo(marker_cluster_ac9e00f33df0dea406c415a4b1fa3f85);
+        
+    
+            var icon_6104527f6e55ac8bd3b6c7ab25adb1b3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_be84fcb2694ecaacc8a0ba55a1b33639.setIcon(icon_6104527f6e55ac8bd3b6c7ab25adb1b3);
+        
+    
+        var popup_9530df4ffde5a9fda454e2d6b92d8e48 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_df3b553ef51644fa306a4b70dc49ad37 = $(`<div id="html_df3b553ef51644fa306a4b70dc49ad37" style="width: 100.0%; height: 100.0%;"><b>PERENCO VIETNAM A.S.</b><br>LONDON, United Kingdom<br>Business Support Services<br>Subsidiary<br>Membres impliqués :<br><ul><li>François Perrodo</li></ul><a href="https://www.dnb.com/site-search-results.html#BusinessDirectoryPageNumber=1&BusinessDirectorySearch=perenco&ContactDirectoryPageNumber=1&MarketplacePageNumber=1&SiteContentPageNumber=1&tab=Business%20Directory" target="_blank">Lien hypertexte</a></div>`)[0];
+                popup_9530df4ffde5a9fda454e2d6b92d8e48.setContent(html_df3b553ef51644fa306a4b70dc49ad37);
+            
+        
+
+        marker_be84fcb2694ecaacc8a0ba55a1b33639.bindPopup(popup_9530df4ffde5a9fda454e2d6b92d8e48)
+        ;
+
+        
+    
+    
+            var marker_dd1295778ea225a7cd6fddce8980b1bb = L.marker(
+                [18.027158800000002, -92.77479118046158],
+                {
+}
+            ).addTo(marker_cluster_ac9e00f33df0dea406c415a4b1fa3f85);
+        
+    
+            var icon_a0e033b9d688d06fda8ca1c5356edc6b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_dd1295778ea225a7cd6fddce8980b1bb.setIcon(icon_a0e033b9d688d06fda8ca1c5356edc6b);
+        
+    
+        var popup_ccb455c90eae2dc4d073fe16bbb0ca3b = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_448b979f935c8d0ae47f68e391767092 = $(`<div id="html_448b979f935c8d0ae47f68e391767092" style="width: 100.0%; height: 100.0%;"><b>Perenco Petroleum Mexico, S.A. de C.V</b><br>Centro, TABASCO, Mexico<br>Support Activities for Mining<br>Independent<br>Membres impliqués :<br><ul><li>François Perrodo</li></ul><a href="https://www.dnb.com/site-search-results.html#BusinessDirectoryPageNumber=1&BusinessDirectorySearch=perenco&ContactDirectoryPageNumber=1&MarketplacePageNumber=1&SiteContentPageNumber=1&tab=Business%20Directory" target="_blank">Lien hypertexte</a></div>`)[0];
+                popup_ccb455c90eae2dc4d073fe16bbb0ca3b.setContent(html_448b979f935c8d0ae47f68e391767092);
+            
+        
+
+        marker_dd1295778ea225a7cd6fddce8980b1bb.bindPopup(popup_ccb455c90eae2dc4d073fe16bbb0ca3b)
+        ;
+
+        
+    
+    
+            var marker_32377a7f6709735cef117d6f9839e69d = L.marker(
+                [50.6868972, -2.1098377],
+                {
+}
+            ).addTo(marker_cluster_ac9e00f33df0dea406c415a4b1fa3f85);
+        
+    
+            var icon_95031bff394a8c1904ff7fbf84a16ecc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_32377a7f6709735cef117d6f9839e69d.setIcon(icon_95031bff394a8c1904ff7fbf84a16ecc);
+        
+    
+        var popup_17e8f7197d3231e9ffe987a09f5511d9 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_07c43c4d079d72cccd775ef164ee6496 = $(`<div id="html_07c43c4d079d72cccd775ef164ee6496" style="width: 100.0%; height: 100.0%;"><b>Perenco UK</b><br>WAREHAM, United Kingdom<br>Support Activities for Mining<br>Independent<br>Membres impliqués :<br><ul><li>François Perrodo</li></ul><a href="https://www.dnb.com/site-search-results.html#BusinessDirectoryPageNumber=1&BusinessDirectorySearch=perenco&ContactDirectoryPageNumber=1&MarketplacePageNumber=1&SiteContentPageNumber=1&tab=Business%20Directory" target="_blank">Lien hypertexte</a></div>`)[0];
+                popup_17e8f7197d3231e9ffe987a09f5511d9.setContent(html_07c43c4d079d72cccd775ef164ee6496);
+            
+        
+
+        marker_32377a7f6709735cef117d6f9839e69d.bindPopup(popup_17e8f7197d3231e9ffe987a09f5511d9)
+        ;
+
+        
+    
+    
+            var marker_f212b55b660a49af6f267f823ffc32fb = L.marker(
+                [4.0429389, 9.7062018],
+                {
+}
+            ).addTo(marker_cluster_ac9e00f33df0dea406c415a4b1fa3f85);
+        
+    
+            var icon_e23a0209c98a5ab2769dea72ef4f42c6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_f212b55b660a49af6f267f823ffc32fb.setIcon(icon_e23a0209c98a5ab2769dea72ef4f42c6);
+        
+    
+        var popup_f7a2aa79a832068657b7584f71baf936 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_5d5abb7c33cb7a934325207102682af7 = $(`<div id="html_5d5abb7c33cb7a934325207102682af7" style="width: 100.0%; height: 100.0%;"><b>STE PERENCO CAMEROON S.A.</b><br>Douala, Cameroon<br>Support Activities for Mining<br>Subsidiary<br>Membres impliqués :<br><ul><li>François Perrodo</li></ul><a href="https://www.dnb.com/site-search-results.html#BusinessDirectoryPageNumber=1&BusinessDirectorySearch=perenco&ContactDirectoryPageNumber=1&MarketplacePageNumber=1&SiteContentPageNumber=1&tab=Business%20Directory" target="_blank">Lien hypertexte</a></div>`)[0];
+                popup_f7a2aa79a832068657b7584f71baf936.setContent(html_5d5abb7c33cb7a934325207102682af7);
+            
+        
+
+        marker_f212b55b660a49af6f267f823ffc32fb.bindPopup(popup_f7a2aa79a832068657b7584f71baf936)
+        ;
+
+        
+    
+    
+            var marker_1b334478e2120a1ff80c38800cf6e8c4 = L.marker(
+                [15.3389667, 38.9326763],
+                {
+}
+            ).addTo(marker_cluster_ac9e00f33df0dea406c415a4b1fa3f85);
+        
+    
+            var icon_76fede20df06c0d7b43fa1d04ba8e179 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_1b334478e2120a1ff80c38800cf6e8c4.setIcon(icon_76fede20df06c0d7b43fa1d04ba8e179);
+        
+    
+        var popup_bca5e5b4f573dc7c2c4e353256d3a24e = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_5e75f23bf2509e9512e72d9cdad790aa = $(`<div id="html_5e75f23bf2509e9512e72d9cdad790aa" style="width: 100.0%; height: 100.0%;"><b>Perenco Eritrea Ltd</b><br>Asmara, Eritrea<br>Petroleum and Petroleum Products Merchant Wholesalers<br>Subsidiary<br>Membres impliqués :<br><ul><li>François Perrodo</li></ul><a href="https://www.dnb.com/site-search-results.html#BusinessDirectoryPageNumber=1&BusinessDirectorySearch=perenco&ContactDirectoryPageNumber=1&MarketplacePageNumber=1&SiteContentPageNumber=1&tab=Business%20Directory" target="_blank">Lien hypertexte</a></div>`)[0];
+                popup_bca5e5b4f573dc7c2c4e353256d3a24e.setContent(html_5e75f23bf2509e9512e72d9cdad790aa);
+            
+        
+
+        marker_1b334478e2120a1ff80c38800cf6e8c4.bindPopup(popup_bca5e5b4f573dc7c2c4e353256d3a24e)
+        ;
+
+        
+    
+    
+            var marker_598905e2319aefef2e77b09ba35d1afe = L.marker(
+                [-22.9110137, -43.2093727],
+                {
+}
+            ).addTo(marker_cluster_ac9e00f33df0dea406c415a4b1fa3f85);
+        
+    
+            var icon_f1eb1a0b3343883ed2df347654e23434 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_598905e2319aefef2e77b09ba35d1afe.setIcon(icon_f1eb1a0b3343883ed2df347654e23434);
+        
+    
+        var popup_9d867d21b6d6e85edebd0cfd2881283e = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_3fcd550df74c93b148a72a9eb7311672 = $(`<div id="html_3fcd550df74c93b148a72a9eb7311672" style="width: 100.0%; height: 100.0%;"><b>PERENCO PETROLEO E GAS DO BRASIL LTDA</b><br>RIO DE JANEIRO, RIO DE JANEIRO, Brazil<br>Oil and Gas Extraction<br>Parent<br>Membres impliqués :<br><ul><li>François Perrodo</li></ul><a href="https://www.dnb.com/site-search-results.html#BusinessDirectoryPageNumber=1&BusinessDirectorySearch=perenco&ContactDirectoryPageNumber=1&MarketplacePageNumber=1&SiteContentPageNumber=1&tab=Business%20Directory" target="_blank">Lien hypertexte</a></div>`)[0];
+                popup_9d867d21b6d6e85edebd0cfd2881283e.setContent(html_3fcd550df74c93b148a72a9eb7311672);
+            
+        
+
+        marker_598905e2319aefef2e77b09ba35d1afe.bindPopup(popup_9d867d21b6d6e85edebd0cfd2881283e)
+        ;
+
+        
+    
+    
+            var marker_e022d2d5098623af8fb8a1b3be000c36 = L.marker(
+                [0.4086518, 9.4418849],
+                {
+}
+            ).addTo(marker_cluster_ac9e00f33df0dea406c415a4b1fa3f85);
+        
+    
+            var icon_5f3b4901dabeef48cc0b3128a9768a2c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_e022d2d5098623af8fb8a1b3be000c36.setIcon(icon_5f3b4901dabeef48cc0b3128a9768a2c);
+        
+    
+        var popup_b4406b95d97ab93b8d29abab8797dabb = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_5f4ce506fde17a70c84418908bb821c0 = $(`<div id="html_5f4ce506fde17a70c84418908bb821c0" style="width: 100.0%; height: 100.0%;"><b>PERENCO OIL & GAS GABON SA</b><br>Libreville, Gabon<br>Support Activities for Mining<br>Subsidiary<br>Membres impliqués :<br><ul><li>François Perrodo</li></ul><a href="https://www.dnb.com/site-search-results.html#BusinessDirectoryPageNumber=1&BusinessDirectorySearch=perenco&ContactDirectoryPageNumber=1&MarketplacePageNumber=1&SiteContentPageNumber=1&tab=Business%20Directory" target="_blank">Lien hypertexte</a></div>`)[0];
+                popup_b4406b95d97ab93b8d29abab8797dabb.setContent(html_5f4ce506fde17a70c84418908bb821c0);
+            
+        
+
+        marker_e022d2d5098623af8fb8a1b3be000c36.bindPopup(popup_b4406b95d97ab93b8d29abab8797dabb)
+        ;
+
+        
+    
+    
+            var marker_31444ce170449ed920d9212732e6ae6b = L.marker(
+                [35.6580089, 139.7515137],
+                {
+}
+            ).addTo(marker_cluster_ac9e00f33df0dea406c415a4b1fa3f85);
+        
+    
+            var icon_bfeb92d9ae66d951fb799e3fdc4e117a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_31444ce170449ed920d9212732e6ae6b.setIcon(icon_bfeb92d9ae66d951fb799e3fdc4e117a);
+        
+    
+        var popup_3d78d7277f4a321f3a3186a084d6c235 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_327a914eec8038495392275332201237 = $(`<div id="html_327a914eec8038495392275332201237" style="width: 100.0%; height: 100.0%;"><b>PERENCO OVERSEAS JAPAN K.K.</b><br>MINATO-KU, TOKYO, Japan<br>Oil and Gas Extraction<br>Subsidiary<br>Membres impliqués :<br><ul><li>François Perrodo</li></ul><a href="https://www.dnb.com/site-search-results.html#BusinessDirectoryPageNumber=1&BusinessDirectorySearch=perenco&ContactDirectoryPageNumber=1&MarketplacePageNumber=1&SiteContentPageNumber=1&tab=Business%20Directory" target="_blank">Lien hypertexte</a></div>`)[0];
+                popup_3d78d7277f4a321f3a3186a084d6c235.setContent(html_327a914eec8038495392275332201237);
+            
+        
+
+        marker_31444ce170449ed920d9212732e6ae6b.bindPopup(popup_3d78d7277f4a321f3a3186a084d6c235)
+        ;
+
+        
+    
+    
+            var marker_4cd8fa5c49c834a682434b20013959d4 = L.marker(
+                [-12.0621065, -77.0365256],
+                {
+}
+            ).addTo(marker_cluster_ac9e00f33df0dea406c415a4b1fa3f85);
+        
+    
+            var icon_ee550aab17c49d7ad3d3faf855daae4d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_4cd8fa5c49c834a682434b20013959d4.setIcon(icon_ee550aab17c49d7ad3d3faf855daae4d);
+        
+    
+        var popup_23e4fce1aa733399a822cc99a0962cfc = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_544ca14b0af446b60a2b60824b17aca1 = $(`<div id="html_544ca14b0af446b60a2b60824b17aca1" style="width: 100.0%; height: 100.0%;"><b>PERENCO PERU BLOCK 39 LIMITED, SUCURSAL DEL PERU</b><br>LIMA, LIMA, Peru<br>Oil and Gas Extraction<br>Independent<br>Membres impliqués :<br><ul><li>François Perrodo</li></ul><a href="https://www.dnb.com/site-search-results.html#BusinessDirectoryPageNumber=1&BusinessDirectorySearch=perenco&ContactDirectoryPageNumber=1&MarketplacePageNumber=1&SiteContentPageNumber=1&tab=Business%20Directory" target="_blank">Lien hypertexte</a></div>`)[0];
+                popup_23e4fce1aa733399a822cc99a0962cfc.setContent(html_544ca14b0af446b60a2b60824b17aca1);
+            
+        
+
+        marker_4cd8fa5c49c834a682434b20013959d4.bindPopup(popup_23e4fce1aa733399a822cc99a0962cfc)
+        ;
+
+        
+    
+    
+            var marker_efaee2d3bbcd64b626b4b8017a2acfba = L.marker(
+                [-12.0621065, -77.0365256],
+                {
+}
+            ).addTo(marker_cluster_ac9e00f33df0dea406c415a4b1fa3f85);
+        
+    
+            var icon_fc9ffcd1632e64bd03f9a1ab3f14782c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_efaee2d3bbcd64b626b4b8017a2acfba.setIcon(icon_fc9ffcd1632e64bd03f9a1ab3f14782c);
+        
+    
+        var popup_7b1dd36488de7dfe6602e5fbfacc68bc = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_27c4c368ac300ba08ec128169a2d4a2e = $(`<div id="html_27c4c368ac300ba08ec128169a2d4a2e" style="width: 100.0%; height: 100.0%;"><b>PERENCO PERU PETROIL LIMITED SUCURCAL DEL PERU</b><br>LIMA, LIMA, Peru<br>Oil and Gas Extraction<br>Independent<br>Membres impliqués :<br><ul><li>François Perrodo</li></ul><a href="https://www.dnb.com/site-search-results.html#BusinessDirectoryPageNumber=1&BusinessDirectorySearch=perenco&ContactDirectoryPageNumber=1&MarketplacePageNumber=1&SiteContentPageNumber=1&tab=Business%20Directory" target="_blank">Lien hypertexte</a></div>`)[0];
+                popup_7b1dd36488de7dfe6602e5fbfacc68bc.setContent(html_27c4c368ac300ba08ec128169a2d4a2e);
+            
+        
+
+        marker_efaee2d3bbcd64b626b4b8017a2acfba.bindPopup(popup_7b1dd36488de7dfe6602e5fbfacc68bc)
+        ;
+
+        
+    
+    
+            var marker_131b1d8f5fa34276b8b797c98a185998 = L.marker(
+                [-4.3217055, 15.3125974],
+                {
+}
+            ).addTo(marker_cluster_ac9e00f33df0dea406c415a4b1fa3f85);
+        
+    
+            var icon_4da446cae4abcfb776685ddea57067d9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_131b1d8f5fa34276b8b797c98a185998.setIcon(icon_4da446cae4abcfb776685ddea57067d9);
+        
+    
+        var popup_49251af260b8dde735ea4105e1e70bb7 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_21291e20946ef18efe83e3a918fd199b = $(`<div id="html_21291e20946ef18efe83e3a918fd199b" style="width: 100.0%; height: 100.0%;"><b>PERENCO RDC SPRL</b><br>Kinshasa, Kinshasa, Democratic Republic Of The Congo<br>Support Activities for Mining<br>Independent<br>Membres impliqués :<br><ul><li>François Perrodo</li></ul><a href="https://www.dnb.com/site-search-results.html#BusinessDirectoryPageNumber=2&BusinessDirectorySearch=perenco&ContactDirectoryPageNumber=1&MarketplacePageNumber=1&SiteContentPageNumber=1&tab=Business%20Directory" target="_blank">Lien hypertexte</a></div>`)[0];
+                popup_49251af260b8dde735ea4105e1e70bb7.setContent(html_21291e20946ef18efe83e3a918fd199b);
+            
+        
+
+        marker_131b1d8f5fa34276b8b797c98a185998.bindPopup(popup_49251af260b8dde735ea4105e1e70bb7)
+        ;
+
+        
+    
+    
+            var marker_5d20fbf71bc47eee06c655c4b5e01e03 = L.marker(
+                [-4.7975373, 11.8503297],
+                {
+}
+            ).addTo(marker_cluster_ac9e00f33df0dea406c415a4b1fa3f85);
+        
+    
+            var icon_e6b0a55fb6fee103b2245fcfaf067c91 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_5d20fbf71bc47eee06c655c4b5e01e03.setIcon(icon_e6b0a55fb6fee103b2245fcfaf067c91);
+        
+    
+        var popup_4dabcb14ee3934a49d056dc94e107e39 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_8f526e5cd88a629eb8ef08f9711f64f9 = $(`<div id="html_8f526e5cd88a629eb8ef08f9711f64f9" style="width: 100.0%; height: 100.0%;"><b>PERENCO EXPLORATION AND PRODUCTION CONGO LIMITED</b><br>Pointe Noire, Congo<br>Support Activities for Mining<br>Independent<br>Membres impliqués :<br><ul><li>François Perrodo</li></ul><a href="https://www.dnb.com/site-search-results.html#BusinessDirectoryPageNumber=2&BusinessDirectorySearch=perenco&ContactDirectoryPageNumber=1&MarketplacePageNumber=1&SiteContentPageNumber=1&tab=Business%20Directory" target="_blank">Lien hypertexte</a></div>`)[0];
+                popup_4dabcb14ee3934a49d056dc94e107e39.setContent(html_8f526e5cd88a629eb8ef08f9711f64f9);
+            
+        
+
+        marker_5d20fbf71bc47eee06c655c4b5e01e03.bindPopup(popup_4dabcb14ee3934a49d056dc94e107e39)
+        ;
+
+        
+    
+    
+            var marker_0f0f9470d62c28bfeb4a3cd418aea0af = L.marker(
+                [-0.7151966, 8.7787919],
+                {
+}
+            ).addTo(marker_cluster_ac9e00f33df0dea406c415a4b1fa3f85);
+        
+    
+            var icon_e5dd00ec2654bc16dc271b26533c0889 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_0f0f9470d62c28bfeb4a3cd418aea0af.setIcon(icon_e5dd00ec2654bc16dc271b26533c0889);
+        
+    
+        var popup_e90ac9105124bda7c3f44ead76ef39c2 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_f2be4b31116c48cb715d74af2f37b85b = $(`<div id="html_f2be4b31116c48cb715d74af2f37b85b" style="width: 100.0%; height: 100.0%;"><b>PERENCO GABON SAPERENCO GABON</b><br>Port Gentil, Gabon<br>Support Activities for Mining<br>Independent<br>Membres impliqués :<br><ul><li>François Perrodo</li></ul><a href="https://www.dnb.com/site-search-results.html#BusinessDirectoryPageNumber=2&BusinessDirectorySearch=perenco&ContactDirectoryPageNumber=1&MarketplacePageNumber=1&SiteContentPageNumber=1&tab=Business%20Directory" target="_blank">Lien hypertexte</a></div>`)[0];
+                popup_e90ac9105124bda7c3f44ead76ef39c2.setContent(html_f2be4b31116c48cb715d74af2f37b85b);
+            
+        
+
+        marker_0f0f9470d62c28bfeb4a3cd418aea0af.bindPopup(popup_e90ac9105124bda7c3f44ead76ef39c2)
+        ;
+
+        
+    
+    
+            var marker_0bda95ae25d816aaa7b46a0453cd85ab = L.marker(
+                [-4.3217055, 15.3125974],
+                {
+}
+            ).addTo(marker_cluster_ac9e00f33df0dea406c415a4b1fa3f85);
+        
+    
+            var icon_abbec3ae89a4e38b437cc5b0db2286ce = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_0bda95ae25d816aaa7b46a0453cd85ab.setIcon(icon_abbec3ae89a4e38b437cc5b0db2286ce);
+        
+    
+        var popup_9a127d1bf3b545dce5665e5c2c71dfdb = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_a500fc48f9370205e53500c92ea4943c = $(`<div id="html_a500fc48f9370205e53500c92ea4943c" style="width: 100.0%; height: 100.0%;"><b>PERENCO-REPPERENCO - RECHERCHE ET</b><br>Kinshasa, Kinshasa, Democratic Republic Of The Congo<br>Support Activities for Mining<br>Independent<br>Membres impliqués :<br><ul><li>François Perrodo</li></ul><a href="https://www.dnb.com/site-search-results.html#BusinessDirectoryPageNumber=2&BusinessDirectorySearch=perenco&ContactDirectoryPageNumber=1&MarketplacePageNumber=1&SiteContentPageNumber=1&tab=Business%20Directory" target="_blank">Lien hypertexte</a></div>`)[0];
+                popup_9a127d1bf3b545dce5665e5c2c71dfdb.setContent(html_a500fc48f9370205e53500c92ea4943c);
+            
+        
+
+        marker_0bda95ae25d816aaa7b46a0453cd85ab.bindPopup(popup_9a127d1bf3b545dce5665e5c2c71dfdb)
+        ;
+
+        
+    
+    
+            var marker_718aed2a60fdb7b0f20fe0d3bb90e7ce = L.marker(
+                [-4.3217055, 15.3125974],
+                {
+}
+            ).addTo(marker_cluster_ac9e00f33df0dea406c415a4b1fa3f85);
+        
+    
+            var icon_b3b96ccabcc20423972ea4888cf023e2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_718aed2a60fdb7b0f20fe0d3bb90e7ce.setIcon(icon_b3b96ccabcc20423972ea4888cf023e2);
+        
+    
+        var popup_48993160b7306e31344a09e96028e536 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_55215e55250df3530fbfbb815b999229 = $(`<div id="html_55215e55250df3530fbfbb815b999229" style="width: 100.0%; height: 100.0%;"><b>PERENCO CONCESSIONPERENCO</b><br>Kinshasa, Kinshasa, Democratic Republic Of The Congo<br>Support Activities for Mining<br>Independent<br>Membres impliqués :<br><ul><li>François Perrodo</li></ul><a href="https://www.dnb.com/site-search-results.html#BusinessDirectoryPageNumber=2&BusinessDirectorySearch=perenco&ContactDirectoryPageNumber=1&MarketplacePageNumber=1&SiteContentPageNumber=1&tab=Business%20Directory" target="_blank">Lien hypertexte</a></div>`)[0];
+                popup_48993160b7306e31344a09e96028e536.setContent(html_55215e55250df3530fbfbb815b999229);
+            
+        
+
+        marker_718aed2a60fdb7b0f20fe0d3bb90e7ce.bindPopup(popup_48993160b7306e31344a09e96028e536)
+        ;
+
+        
+    
+    
+            var marker_de15ca739d47fed38b3bcee2162175dd = L.marker(
+                [-2.9814344, 23.8222636],
+                {
+}
+            ).addTo(marker_cluster_ac9e00f33df0dea406c415a4b1fa3f85);
+        
+    
+            var icon_6370473cb52cbee133dc01939317f0dc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_de15ca739d47fed38b3bcee2162175dd.setIcon(icon_6370473cb52cbee133dc01939317f0dc);
+        
+    
+        var popup_12af713cab632b3774912df09c441a6e = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_bfc447758c54ed626ea849a4ff276491 = $(`<div id="html_bfc447758c54ed626ea849a4ff276491" style="width: 100.0%; height: 100.0%;"><b>PERENCO</b><br>Democratic Republic Of The Congo<br>Support Activities for Mining<br>Independent<br>Membres impliqués :<br><ul><li>François Perrodo</li></ul><a href="https://www.dnb.com/site-search-results.html#BusinessDirectoryPageNumber=2&BusinessDirectorySearch=perenco&ContactDirectoryPageNumber=1&MarketplacePageNumber=1&SiteContentPageNumber=1&tab=Business%20Directory" target="_blank">Lien hypertexte</a></div>`)[0];
+                popup_12af713cab632b3774912df09c441a6e.setContent(html_bfc447758c54ed626ea849a4ff276491);
+            
+        
+
+        marker_de15ca739d47fed38b3bcee2162175dd.bindPopup(popup_12af713cab632b3774912df09c441a6e)
+        ;
+
+        
+    
+    
+            var marker_f698e7f00b4f92a2656d2e77e082a1e4 = L.marker(
+                [36.8790882, 10.327678],
+                {
+}
+            ).addTo(marker_cluster_ac9e00f33df0dea406c415a4b1fa3f85);
+        
+    
+            var icon_caa60aa02d17c0319cbe0d4b513d4748 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_f698e7f00b4f92a2656d2e77e082a1e4.setIcon(icon_caa60aa02d17c0319cbe0d4b513d4748);
+        
+    
+        var popup_b335d554461148255cc42b0d0d64328a = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_675d58891b177d576c4e05f3b6ac766e = $(`<div id="html_675d58891b177d576c4e05f3b6ac766e" style="width: 100.0%; height: 100.0%;"><b>PERENCO TUNISIA COMPANY LIMITED</b><br>MARSA, Tunisia<br>Oil and Gas Extraction<br>Independent<br>Membres impliqués :<br><ul><li>François Perrodo</li></ul><a href="https://www.dnb.com/site-search-results.html#BusinessDirectoryPageNumber=2&BusinessDirectorySearch=perenco&ContactDirectoryPageNumber=1&MarketplacePageNumber=1&SiteContentPageNumber=1&tab=Business%20Directory" target="_blank">Lien hypertexte</a></div>`)[0];
+                popup_b335d554461148255cc42b0d0d64328a.setContent(html_675d58891b177d576c4e05f3b6ac766e);
+            
+        
+
+        marker_f698e7f00b4f92a2656d2e77e082a1e4.bindPopup(popup_b335d554461148255cc42b0d0d64328a)
+        ;
+
+        
+    
+    
+            var marker_7ae8480925fea92f61906b90256c456e = L.marker(
+                [4.0429389, 9.7062018],
+                {
+}
+            ).addTo(marker_cluster_ac9e00f33df0dea406c415a4b1fa3f85);
+        
+    
+            var icon_bb81b2c30125b0d84b3a3a2b6d8cd33c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_7ae8480925fea92f61906b90256c456e.setIcon(icon_bb81b2c30125b0d84b3a3a2b6d8cd33c);
+        
+    
+        var popup_2cc33c8e2464ef5e21d4303a0a67f66d = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_1b1d24a7d015a18dc8f290007f32dcf1 = $(`<div id="html_1b1d24a7d015a18dc8f290007f32dcf1" style="width: 100.0%; height: 100.0%;"><b>PERENCO CAMEROUN SADirection Perenco Cameroun</b><br>Douala, Cameroon<br>Support Activities for Mining<br>Independent<br>Membres impliqués :<br><ul><li>François Perrodo</li></ul><a href="https://www.dnb.com/site-search-results.html#BusinessDirectoryPageNumber=2&BusinessDirectorySearch=perenco&ContactDirectoryPageNumber=1&MarketplacePageNumber=1&SiteContentPageNumber=1&tab=Business%20Directory" target="_blank">Lien hypertexte</a></div>`)[0];
+                popup_2cc33c8e2464ef5e21d4303a0a67f66d.setContent(html_1b1d24a7d015a18dc8f290007f32dcf1);
+            
+        
+
+        marker_7ae8480925fea92f61906b90256c456e.bindPopup(popup_2cc33c8e2464ef5e21d4303a0a67f66d)
+        ;
+
+        
+    
+    
+            var marker_a77b450dabdac4d3ff4cf07bf1a577a2 = L.marker(
+                [-4.7975373, 11.8503297],
+                {
+}
+            ).addTo(marker_cluster_ac9e00f33df0dea406c415a4b1fa3f85);
+        
+    
+            var icon_8534494534f8f7f7f5bcde99bb5184d1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_a77b450dabdac4d3ff4cf07bf1a577a2.setIcon(icon_8534494534f8f7f7f5bcde99bb5184d1);
+        
+    
+        var popup_f92f7434d0c633a1577447ba9d68a62e = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_0f745c91f0a53e9e771826ccf8b44881 = $(`<div id="html_0f745c91f0a53e9e771826ccf8b44881" style="width: 100.0%; height: 100.0%;"><b>PERENCO CONGO S.A.PERENCO CONGO</b><br>Pointe Noire, Congo<br>Support Activities for Mining<br>Independent<br>Membres impliqués :<br><ul><li>François Perrodo</li></ul><a href="https://www.dnb.com/site-search-results.html#BusinessDirectoryPageNumber=2&BusinessDirectorySearch=perenco&ContactDirectoryPageNumber=1&MarketplacePageNumber=1&SiteContentPageNumber=1&tab=Business%20Directory" target="_blank">Lien hypertexte</a></div>`)[0];
+                popup_f92f7434d0c633a1577447ba9d68a62e.setContent(html_0f745c91f0a53e9e771826ccf8b44881);
+            
+        
+
+        marker_a77b450dabdac4d3ff4cf07bf1a577a2.bindPopup(popup_f92f7434d0c633a1577447ba9d68a62e)
+        ;
+
+        
+    
+    
+            var marker_187486c77ec514d8273edf3884e2f2e8 = L.marker(
+                [-0.7151966, 8.7787919],
+                {
+}
+            ).addTo(marker_cluster_ac9e00f33df0dea406c415a4b1fa3f85);
+        
+    
+            var icon_7c671e943451f884ed33b1a32dfc7fdf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_187486c77ec514d8273edf3884e2f2e8.setIcon(icon_7c671e943451f884ed33b1a32dfc7fdf);
+        
+    
+        var popup_22c26374e0333e79f7dc58aa6db723af = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_1a4327731699686b9c70bf0befd827c2 = $(`<div id="html_1a4327731699686b9c70bf0befd827c2" style="width: 100.0%; height: 100.0%;"><b>PERENCO GABON SA</b><br>Port-Gentil, Gabon<br>Support Activities for Mining<br>Independent<br>Membres impliqués :<br><ul><li>François Perrodo</li></ul><a href="https://www.dnb.com/site-search-results.html#BusinessDirectoryPageNumber=2&BusinessDirectorySearch=perenco&ContactDirectoryPageNumber=1&MarketplacePageNumber=1&SiteContentPageNumber=1&tab=Business%20Directory" target="_blank">Lien hypertexte</a></div>`)[0];
+                popup_22c26374e0333e79f7dc58aa6db723af.setContent(html_1a4327731699686b9c70bf0befd827c2);
+            
+        
+
+        marker_187486c77ec514d8273edf3884e2f2e8.bindPopup(popup_22c26374e0333e79f7dc58aa6db723af)
+        ;
+
+        
+    
+    
+            var marker_8febcc2230d0d22dee2cf58013ee82cc = L.marker(
+                [-0.7161319, 8.783165],
+                {
+}
+            ).addTo(marker_cluster_ac9e00f33df0dea406c415a4b1fa3f85);
+        
+    
+            var icon_58127655b2c0a254fadf5b91f06a22f8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_8febcc2230d0d22dee2cf58013ee82cc.setIcon(icon_58127655b2c0a254fadf5b91f06a22f8);
+        
+    
+        var popup_b4e1a912b0c219a1cdc428744df7094e = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_e5a9395b82ffd91e8685195aafa324f7 = $(`<div id="html_e5a9395b82ffd91e8685195aafa324f7" style="width: 100.0%; height: 100.0%;"><b>PERENCO EXPLORATION GABON SA LIMITED</b><br>Littoral Port Gentil, Gabon<br>Support Activities for Mining<br>Independent<br>Membres impliqués :<br><ul><li>François Perrodo</li></ul><a href="https://www.dnb.com/site-search-results.html#BusinessDirectoryPageNumber=2&BusinessDirectorySearch=perenco&ContactDirectoryPageNumber=1&MarketplacePageNumber=1&SiteContentPageNumber=1&tab=Business%20Directory" target="_blank">Lien hypertexte</a></div>`)[0];
+                popup_b4e1a912b0c219a1cdc428744df7094e.setContent(html_e5a9395b82ffd91e8685195aafa324f7);
+            
+        
+
+        marker_8febcc2230d0d22dee2cf58013ee82cc.bindPopup(popup_b4e1a912b0c219a1cdc428744df7094e)
+        ;
+
+        
+    
+    
+            var marker_6d9f1612a64a0cba3af49bf0ea8cd65b = L.marker(
+                [4.0429389, 9.7062018],
+                {
+}
+            ).addTo(marker_cluster_ac9e00f33df0dea406c415a4b1fa3f85);
+        
+    
+            var icon_7057f7893949df637f7735e79ac0e07e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_6d9f1612a64a0cba3af49bf0ea8cd65b.setIcon(icon_7057f7893949df637f7735e79ac0e07e);
+        
+    
+        var popup_43141e99573e70aea633922819940ed3 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_04c67d3f5eb081d2a63b141fd78168b4 = $(`<div id="html_04c67d3f5eb081d2a63b141fd78168b4" style="width: 100.0%; height: 100.0%;"><b>PERENCO RIO DEL REY CAMEROUN  SA</b><br>Douala, Cameroon<br>Basic Chemical Manufacturing<br>Independent<br>Membres impliqués :<br><ul><li>François Perrodo</li></ul><a href="https://www.dnb.com/site-search-results.html#BusinessDirectoryPageNumber=2&BusinessDirectorySearch=perenco&ContactDirectoryPageNumber=1&MarketplacePageNumber=1&SiteContentPageNumber=1&tab=Business%20Directory" target="_blank">Lien hypertexte</a></div>`)[0];
+                popup_43141e99573e70aea633922819940ed3.setContent(html_04c67d3f5eb081d2a63b141fd78168b4);
+            
+        
+
+        marker_6d9f1612a64a0cba3af49bf0ea8cd65b.bindPopup(popup_43141e99573e70aea633922819940ed3)
+        ;
+
+        
+    
+    
+            var marker_d58ce9a5ad282d4ec6fd91c17de7286a = L.marker(
+                [52.305554, 4.6926644],
+                {
+}
+            ).addTo(marker_cluster_ac9e00f33df0dea406c415a4b1fa3f85);
+        
+    
+            var icon_c5ce804be3b44e1fbf2d97174924d9f3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_d58ce9a5ad282d4ec6fd91c17de7286a.setIcon(icon_c5ce804be3b44e1fbf2d97174924d9f3);
+        
+    
+        var popup_4c294c6392bf0b904d2fab377432c1b7 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_dc0339d1450a657053ea2849a2f22c9b = $(`<div id="html_dc0339d1450a657053ea2849a2f22c9b" style="width: 100.0%; height: 100.0%;"><b>Perenco Mexico Holdings B.V.</b><br>Hoofddorp, Netherlands<br>Management of Companies and Enterprises<br>Parent<br>Membres impliqués :<br><ul><li>François Perrodo</li></ul><a href="https://www.dnb.com/site-search-results.html#BusinessDirectoryPageNumber=2&BusinessDirectorySearch=perenco&ContactDirectoryPageNumber=1&MarketplacePageNumber=1&SiteContentPageNumber=1&tab=Business%20Directory" target="_blank">Lien hypertexte</a></div>`)[0];
+                popup_4c294c6392bf0b904d2fab377432c1b7.setContent(html_dc0339d1450a657053ea2849a2f22c9b);
+            
+        
+
+        marker_d58ce9a5ad282d4ec6fd91c17de7286a.bindPopup(popup_4c294c6392bf0b904d2fab377432c1b7)
+        ;
+
+        
+    
+    
+            var marker_a55106394c84b63462a27dab6e1f300c = L.marker(
+                [35.1746503, 33.3638783],
+                {
+}
+            ).addTo(marker_cluster_ac9e00f33df0dea406c415a4b1fa3f85);
+        
+    
+            var icon_33ea4172b7cbb99094e90c9df3a17bb9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_a55106394c84b63462a27dab6e1f300c.setIcon(icon_33ea4172b7cbb99094e90c9df3a17bb9);
+        
+    
+        var popup_53b8013ef79417aeb1f7dec667ef4b0e = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_5313ed8b794589b643e65ba6d81b7a66 = $(`<div id="html_5313ed8b794589b643e65ba6d81b7a66" style="width: 100.0%; height: 100.0%;"><b>PERENCO CYPRUS INTERNATIONAL LIMITED</b><br>Nicosia, Cyprus<br>Other Support Activities for Transportation<br>Independent<br>Membres impliqués :<br><ul><li>François Perrodo</li></ul><a href="https://www.dnb.com/site-search-results.html#BusinessDirectoryPageNumber=2&BusinessDirectorySearch=perenco&ContactDirectoryPageNumber=1&MarketplacePageNumber=1&SiteContentPageNumber=1&tab=Business%20Directory" target="_blank">Lien hypertexte</a></div>`)[0];
+                popup_53b8013ef79417aeb1f7dec667ef4b0e.setContent(html_5313ed8b794589b643e65ba6d81b7a66);
+            
+        
+
+        marker_a55106394c84b63462a27dab6e1f300c.bindPopup(popup_53b8013ef79417aeb1f7dec667ef4b0e)
+        ;
+
+        
+    
+    
+            var marker_e9dccc565d298417e905a87efff7ef84 = L.marker(
+                [-22.9110137, -43.2093727],
+                {
+}
+            ).addTo(marker_cluster_ac9e00f33df0dea406c415a4b1fa3f85);
+        
+    
+            var icon_8cb0aa345303ea917ec01fa0bd02922b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_e9dccc565d298417e905a87efff7ef84.setIcon(icon_8cb0aa345303ea917ec01fa0bd02922b);
+        
+    
+        var popup_e85b6d545bdf401ed9ad987d68926a88 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_0b89341c7f5cf01c0e3e996afce779c4 = $(`<div id="html_0b89341c7f5cf01c0e3e996afce779c4" style="width: 100.0%; height: 100.0%;"><b>PERENCO OGX BM-ES-39</b><br>RIO DE JANEIRO, RIO DE JANEIRO, Brazil<br>Oil and Gas Extraction<br>Independent<br>Membres impliqués :<br><ul><li>François Perrodo</li></ul><a href="https://www.dnb.com/site-search-results.html#BusinessDirectoryPageNumber=2&BusinessDirectorySearch=perenco&ContactDirectoryPageNumber=1&MarketplacePageNumber=1&SiteContentPageNumber=1&tab=Business%20Directory" target="_blank">Lien hypertexte</a></div>`)[0];
+                popup_e85b6d545bdf401ed9ad987d68926a88.setContent(html_0b89341c7f5cf01c0e3e996afce779c4);
+            
+        
+
+        marker_e9dccc565d298417e905a87efff7ef84.bindPopup(popup_e85b6d545bdf401ed9ad987d68926a88)
+        ;
+
+        
+    
+    
+            var marker_be4b4b95805f69651eb82d50f68125c2 = L.marker(
+                [-22.9110137, -43.2093727],
+                {
+}
+            ).addTo(marker_cluster_ac9e00f33df0dea406c415a4b1fa3f85);
+        
+    
+            var icon_6a683f83bb7a14142c9a4cfd8c7055cc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_be4b4b95805f69651eb82d50f68125c2.setIcon(icon_6a683f83bb7a14142c9a4cfd8c7055cc);
+        
+    
+        var popup_14550482a69dbb7c49191117ac7478c5 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_9580214fab303b2331815a842851481d = $(`<div id="html_9580214fab303b2331815a842851481d" style="width: 100.0%; height: 100.0%;"><b>PERENCO OGX BM-ES-37</b><br>RIO DE JANEIRO, RIO DE JANEIRO, Brazil<br>Oil and Gas Extraction<br>Independent<br>Membres impliqués :<br><ul><li>François Perrodo</li></ul><a href="https://www.dnb.com/site-search-results.html#BusinessDirectoryPageNumber=2&BusinessDirectorySearch=perenco&ContactDirectoryPageNumber=1&MarketplacePageNumber=1&SiteContentPageNumber=1&tab=Business%20Directory" target="_blank">Lien hypertexte</a></div>`)[0];
+                popup_14550482a69dbb7c49191117ac7478c5.setContent(html_9580214fab303b2331815a842851481d);
+            
+        
+
+        marker_be4b4b95805f69651eb82d50f68125c2.bindPopup(popup_14550482a69dbb7c49191117ac7478c5)
+        ;
+
+        
+    
+    
+            var marker_b05cc53f0fdeb5e8535e8b8bf21c78b5 = L.marker(
+                [-22.9110137, -43.2093727],
+                {
+}
+            ).addTo(marker_cluster_ac9e00f33df0dea406c415a4b1fa3f85);
+        
+    
+            var icon_05ec23a50f069840872416b10ef8bce9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_b05cc53f0fdeb5e8535e8b8bf21c78b5.setIcon(icon_05ec23a50f069840872416b10ef8bce9);
+        
+    
+        var popup_4e677d8de24e164bb20760995b14bd9a = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_becea402e24d11e29bf8c8e783806f04 = $(`<div id="html_becea402e24d11e29bf8c8e783806f04" style="width: 100.0%; height: 100.0%;"><b>PERENCO OGX BM-ES-38</b><br>RIO DE JANEIRO, RIO DE JANEIRO, Brazil<br>Oil and Gas Extraction<br>Independent<br>Membres impliqués :<br><ul><li>François Perrodo</li></ul><a href="https://www.dnb.com/site-search-results.html#BusinessDirectoryPageNumber=2&BusinessDirectorySearch=perenco&ContactDirectoryPageNumber=1&MarketplacePageNumber=1&SiteContentPageNumber=1&tab=Business%20Directory" target="_blank">Lien hypertexte</a></div>`)[0];
+                popup_4e677d8de24e164bb20760995b14bd9a.setContent(html_becea402e24d11e29bf8c8e783806f04);
+            
+        
+
+        marker_b05cc53f0fdeb5e8535e8b8bf21c78b5.bindPopup(popup_4e677d8de24e164bb20760995b14bd9a)
+        ;
+
+        
+    
+    
+            var marker_13bdad6425af5cf9a9593459caf81747 = L.marker(
+                [14.6416142, -90.5132836],
+                {
+}
+            ).addTo(marker_cluster_ac9e00f33df0dea406c415a4b1fa3f85);
+        
+    
+            var icon_c4b070cd033905e85e7cf3cbb377071c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_13bdad6425af5cf9a9593459caf81747.setIcon(icon_c4b070cd033905e85e7cf3cbb377071c);
+        
+    
+        var popup_806e91c5e91d6686cc2bf3a11958eba2 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_7dcd6db20a60b1b8c95e2544288cbc21 = $(`<div id="html_7dcd6db20a60b1b8c95e2544288cbc21" style="width: 100.0%; height: 100.0%;"><b>Asociacion Solidarista Perenco Guatemala (AspeguaAsociacion Solidarista Perenco Guatemala (Aspegua)</b><br>GUATEMALA CITY, Guatemala, Guatemala<br>Other Ambulatory Health Care Services<br>Independent<br>Membres impliqués :<br><ul><li>François Perrodo</li></ul><a href="https://www.dnb.com/site-search-results.html#BusinessDirectoryPageNumber=2&BusinessDirectorySearch=perenco&ContactDirectoryPageNumber=1&MarketplacePageNumber=1&SiteContentPageNumber=1&tab=Business%20Directory" target="_blank">Lien hypertexte</a></div>`)[0];
+                popup_806e91c5e91d6686cc2bf3a11958eba2.setContent(html_7dcd6db20a60b1b8c95e2544288cbc21);
+            
+        
+
+        marker_13bdad6425af5cf9a9593459caf81747.bindPopup(popup_806e91c5e91d6686cc2bf3a11958eba2)
+        ;
+
+        
+    
+    
+            var marker_360d207511d0c41f9835944ebf8c4e66 = L.marker(
+                [25.0782266, -77.3383438],
+                {
+}
+            ).addTo(marker_cluster_ac9e00f33df0dea406c415a4b1fa3f85);
+        
+    
+            var icon_2b01961fb7c7b143c011c87952cd6f4a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_360d207511d0c41f9835944ebf8c4e66.setIcon(icon_2b01961fb7c7b143c011c87952cd6f4a);
+        
+    
+        var popup_458a27e7f38b34edad16836bd6da98ca = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_b9d7ea4d9b0d78d69e7ee4094130056c = $(`<div id="html_b9d7ea4d9b0d78d69e7ee4094130056c" style="width: 100.0%; height: 100.0%;"><b>Perenco Peru Petroleum Limited</b><br>NASSAU, Bahamas<br>Management of Companies and Enterprises<br>Parent<br>Membres impliqués :<br><ul><li>François Perrodo</li></ul><a href="https://www.dnb.com/site-search-results.html#BusinessDirectoryPageNumber=2&BusinessDirectorySearch=perenco&ContactDirectoryPageNumber=1&MarketplacePageNumber=1&SiteContentPageNumber=1&tab=Business%20Directory" target="_blank">Lien hypertexte</a></div>`)[0];
+                popup_458a27e7f38b34edad16836bd6da98ca.setContent(html_b9d7ea4d9b0d78d69e7ee4094130056c);
+            
+        
+
+        marker_360d207511d0c41f9835944ebf8c4e66.bindPopup(popup_458a27e7f38b34edad16836bd6da98ca)
+        ;
+
+        
+    
+    
+            var marker_245b40f4a73b728e314c55648c79b324 = L.marker(
+                [-38.4675898, 175.0145357],
+                {
+}
+            ).addTo(marker_cluster_ac9e00f33df0dea406c415a4b1fa3f85);
+        
+    
+            var icon_0ae9dbd0c502060b51dfebccadc6cc2b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_245b40f4a73b728e314c55648c79b324.setIcon(icon_0ae9dbd0c502060b51dfebccadc6cc2b);
+        
+    
+        var popup_675b626dab448357d40a5a51e7b7e59b = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_98501510800a1eabd04cec82284ad122 = $(`<div id="html_98501510800a1eabd04cec82284ad122" style="width: 100.0%; height: 100.0%;"><b>PERENCO MARKETING LIMITED</b><br>Piopio, New Zealand<br>Management, Scientific, and Technical Consulting Services<br>Independent<br>Membres impliqués :<br><ul><li>François Perrodo</li></ul><a href="https://www.dnb.com/site-search-results.html#BusinessDirectoryPageNumber=2&BusinessDirectorySearch=perenco&ContactDirectoryPageNumber=1&MarketplacePageNumber=1&SiteContentPageNumber=1&tab=Business%20Directory" target="_blank">Lien hypertexte</a></div>`)[0];
+                popup_675b626dab448357d40a5a51e7b7e59b.setContent(html_98501510800a1eabd04cec82284ad122);
+            
+        
+
+        marker_245b40f4a73b728e314c55648c79b324.bindPopup(popup_675b626dab448357d40a5a51e7b7e59b)
+        ;
+
+        
+    
+    
+            var marker_e73e6c35ded151f3ad35273e9b0b5505 = L.marker(
+                [36.8002068, 10.1857757],
+                {
+}
+            ).addTo(marker_cluster_ac9e00f33df0dea406c415a4b1fa3f85);
+        
+    
+            var icon_4b291f3b225b297175a15a777e45098d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_e73e6c35ded151f3ad35273e9b0b5505.setIcon(icon_4b291f3b225b297175a15a777e45098d);
+        
+    
+        var popup_af42bfc952fecdee8756319a24346aaa = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_3a15feb1a47f21c915dfe6439ccf000c = $(`<div id="html_3a15feb1a47f21c915dfe6439ccf000c" style="width: 100.0%; height: 100.0%;"><b>PERENCO ENERGIES TUNISIA</b><br>Tunis, Tunisia<br>Electric Power Generation, Transmission and Distribution<br>Independent<br>Membres impliqués :<br><ul><li>François Perrodo</li></ul><a href="https://www.dnb.com/site-search-results.html#BusinessDirectoryPageNumber=2&BusinessDirectorySearch=perenco&ContactDirectoryPageNumber=1&MarketplacePageNumber=1&SiteContentPageNumber=1&tab=Business%20Directory" target="_blank">Lien hypertexte</a></div>`)[0];
+                popup_af42bfc952fecdee8756319a24346aaa.setContent(html_3a15feb1a47f21c915dfe6439ccf000c);
+            
+        
+
+        marker_e73e6c35ded151f3ad35273e9b0b5505.bindPopup(popup_af42bfc952fecdee8756319a24346aaa)
+        ;
+
+        
+    
+    
+            var marker_44fd498b99a8cc1c4b130e4894230956 = L.marker(
+                [10.5060934, -66.9146008],
+                {
+}
+            ).addTo(marker_cluster_ac9e00f33df0dea406c415a4b1fa3f85);
+        
+    
+            var icon_8fc5a6bd54d617ea4d70b334d55c3132 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_44fd498b99a8cc1c4b130e4894230956.setIcon(icon_8fc5a6bd54d617ea4d70b334d55c3132);
+        
+    
+        var popup_92f7ac0f797a0c6c041549fb4728a38f = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_f4400ea682fb7ee9ed8134fab56d1360 = $(`<div id="html_f4400ea682fb7ee9ed8134fab56d1360" style="width: 100.0%; height: 100.0%;"><b>Perenco Venezuela SA</b><br>CARACAS, Venezuela<br>Support Activities for Mining<br>Independent<br>Membres impliqués :<br><ul><li>François Perrodo</li></ul><a href="https://www.dnb.com/site-search-results.html#BusinessDirectoryPageNumber=2&BusinessDirectorySearch=perenco&ContactDirectoryPageNumber=1&MarketplacePageNumber=1&SiteContentPageNumber=1&tab=Business%20Directory" target="_blank">Lien hypertexte</a></div>`)[0];
+                popup_92f7ac0f797a0c6c041549fb4728a38f.setContent(html_f4400ea682fb7ee9ed8134fab56d1360);
+            
+        
+
+        marker_44fd498b99a8cc1c4b130e4894230956.bindPopup(popup_92f7ac0f797a0c6c041549fb4728a38f)
+        ;
+
+        
+    
+    
+            var marker_7aa3d95177a399b4240a70b38a4e5aef = L.marker(
+                [30.0443879, 31.2357257],
+                {
+}
+            ).addTo(marker_cluster_ac9e00f33df0dea406c415a4b1fa3f85);
+        
+    
+            var icon_5c32b4286348972a00c05b091b23f50d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_7aa3d95177a399b4240a70b38a4e5aef.setIcon(icon_5c32b4286348972a00c05b091b23f50d);
+        
+    
+        var popup_b4170ce419605288ea3ff6420ee6ac28 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_b5c05d967cd7667be64074a780ac4589 = $(`<div id="html_b5c05d967cd7667be64074a780ac4589" style="width: 100.0%; height: 100.0%;"><b>PERENCO HOLDINGS</b><br>Cairo, Egypt<br>Management of Companies and Enterprises<br>Independent<br>Membres impliqués :<br><ul><li>François Perrodo</li></ul><a href="https://www.dnb.com/site-search-results.html#BusinessDirectoryPageNumber=2&BusinessDirectorySearch=perenco&ContactDirectoryPageNumber=1&MarketplacePageNumber=1&SiteContentPageNumber=1&tab=Business%20Directory" target="_blank">Lien hypertexte</a></div>`)[0];
+                popup_b4170ce419605288ea3ff6420ee6ac28.setContent(html_b5c05d967cd7667be64074a780ac4589);
+            
+        
+
+        marker_7aa3d95177a399b4240a70b38a4e5aef.bindPopup(popup_b4170ce419605288ea3ff6420ee6ac28)
+        ;
+
+        
+    
+    
+            var marker_1c133af9d0c2a742301a4b409a88e54b = L.marker(
+                [-20.1624522, 57.5028044],
+                {
+}
+            ).addTo(marker_cluster_ac9e00f33df0dea406c415a4b1fa3f85);
+        
+    
+            var icon_72d14401b5b8feec2d8fc01ccf76c58d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_1c133af9d0c2a742301a4b409a88e54b.setIcon(icon_72d14401b5b8feec2d8fc01ccf76c58d);
+        
+    
+        var popup_d805a609b72ecc27cd7b987335d33db5 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_301b06d0f0f54d19552d2c2b9f1c0830 = $(`<div id="html_301b06d0f0f54d19552d2c2b9f1c0830" style="width: 100.0%; height: 100.0%;"><b>PERENCO SERVICES LIMITED</b><br>Port Louis, Port Louis, Mauritius<br>Management of Companies and Enterprises<br>Independent<br>Membres impliqués :<br><ul><li>François Perrodo</li></ul><a href="https://www.dnb.com/site-search-results.html#BusinessDirectoryPageNumber=2&BusinessDirectorySearch=perenco&ContactDirectoryPageNumber=1&MarketplacePageNumber=1&SiteContentPageNumber=1&tab=Business%20Directory" target="_blank">Lien hypertexte</a></div>`)[0];
+                popup_d805a609b72ecc27cd7b987335d33db5.setContent(html_301b06d0f0f54d19552d2c2b9f1c0830);
+            
+        
+
+        marker_1c133af9d0c2a742301a4b409a88e54b.bindPopup(popup_d805a609b72ecc27cd7b987335d33db5)
+        ;
+
+        
+    
+    
+            var marker_d13a79728cd48683973b5fdcaa3f8d70 = L.marker(
+                [25.0782266, -77.3383438],
+                {
+}
+            ).addTo(marker_cluster_ac9e00f33df0dea406c415a4b1fa3f85);
+        
+    
+            var icon_76f8121105886df5656d139b0708f8ea = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_d13a79728cd48683973b5fdcaa3f8d70.setIcon(icon_76f8121105886df5656d139b0708f8ea);
+        
+    
+        var popup_a697555f7c2adcc6c3af6ec2da3c97a9 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_c8017e06af1073cbd5e3a0b215118a98 = $(`<div id="html_c8017e06af1073cbd5e3a0b215118a98" style="width: 100.0%; height: 100.0%;"><b>Perenco S.A.</b><br>NASSAU, Bahamas<br>Management of Companies and Enterprises<br>Subsidiary<br>Membres impliqués :<br><ul><li>François Perrodo</li></ul><a href="https://www.dnb.com/site-search-results.html#BusinessDirectoryPageNumber=2&BusinessDirectorySearch=perenco&ContactDirectoryPageNumber=1&MarketplacePageNumber=1&SiteContentPageNumber=1&tab=Business%20Directory" target="_blank">Lien hypertexte</a></div>`)[0];
+                popup_a697555f7c2adcc6c3af6ec2da3c97a9.setContent(html_c8017e06af1073cbd5e3a0b215118a98);
+            
+        
+
+        marker_d13a79728cd48683973b5fdcaa3f8d70.bindPopup(popup_a697555f7c2adcc6c3af6ec2da3c97a9)
+        ;
+
+        
+    
+    
+            var marker_9cffa329a9deb4b2a13a0a5c454a8e77 = L.marker(
+                [25.0782266, -77.3383438],
+                {
+}
+            ).addTo(marker_cluster_ac9e00f33df0dea406c415a4b1fa3f85);
+        
+    
+            var icon_6c5e6bb2368b4b822f02646a059a2afa = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_9cffa329a9deb4b2a13a0a5c454a8e77.setIcon(icon_6c5e6bb2368b4b822f02646a059a2afa);
+        
+    
+        var popup_5efcc02756fe46614b5c269a7d8f844b = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_1ef63b8b2fb87cbf00e2c8e61c2c38dc = $(`<div id="html_1ef63b8b2fb87cbf00e2c8e61c2c38dc" style="width: 100.0%; height: 100.0%;"><b>Perenco Petroleum Limited</b><br>NASSAU, Bahamas<br>Management of Companies and Enterprises<br>Subsidiary<br>Membres impliqués :<br><ul><li>François Perrodo</li></ul><a href="https://www.dnb.com/site-search-results.html#BusinessDirectoryPageNumber=3&BusinessDirectorySearch=perenco&ContactDirectoryPageNumber=1&MarketplacePageNumber=1&SiteContentPageNumber=1&tab=Business%20Directory" target="_blank">Lien hypertexte</a></div>`)[0];
+                popup_5efcc02756fe46614b5c269a7d8f844b.setContent(html_1ef63b8b2fb87cbf00e2c8e61c2c38dc);
+            
+        
+
+        marker_9cffa329a9deb4b2a13a0a5c454a8e77.bindPopup(popup_5efcc02756fe46614b5c269a7d8f844b)
+        ;
+
+        
+    
+    
+            var marker_f9a0b09bb3a1bbdab90b3e0b638631dc = L.marker(
+                [-12.0621065, -77.0365256],
+                {
+}
+            ).addTo(marker_cluster_ac9e00f33df0dea406c415a4b1fa3f85);
+        
+    
+            var icon_bb32cbab483b51edf937d6d912219171 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_f9a0b09bb3a1bbdab90b3e0b638631dc.setIcon(icon_bb32cbab483b51edf937d6d912219171);
+        
+    
+        var popup_c9902a2bec18ad6422421407dee3b28b = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_42ae6eb6e460c005093534ff0070f0e4 = $(`<div id="html_42ae6eb6e460c005093534ff0070f0e4" style="width: 100.0%; height: 100.0%;"><b>Perenco Perú Petroleum Limited Sucursal del Perú</b><br>Lima, Lima, Peru<br>Support Activities for Mining<br>Branch<br>Membres impliqués :<br><ul><li>François Perrodo</li></ul><a href="https://www.dnb.com/site-search-results.html#BusinessDirectoryPageNumber=3&BusinessDirectorySearch=perenco&ContactDirectoryPageNumber=1&MarketplacePageNumber=1&SiteContentPageNumber=1&tab=Business%20Directory" target="_blank">Lien hypertexte</a></div>`)[0];
+                popup_c9902a2bec18ad6422421407dee3b28b.setContent(html_42ae6eb6e460c005093534ff0070f0e4);
+            
+        
+
+        marker_f9a0b09bb3a1bbdab90b3e0b638631dc.bindPopup(popup_c9902a2bec18ad6422421407dee3b28b)
+        ;
+
+        
+    
+    
+            var marker_106db1976556262839db90ac94ec2678 = L.marker(
+                [30.0443879, 31.2357257],
+                {
+}
+            ).addTo(marker_cluster_ac9e00f33df0dea406c415a4b1fa3f85);
+        
+    
+            var icon_e7ed8946ed3fd4249bb447c60b518c35 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_106db1976556262839db90ac94ec2678.setIcon(icon_e7ed8946ed3fd4249bb447c60b518c35);
+        
+    
+        var popup_c3beb97b25b695e8923f903811bc9160 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_fada3d8583799d1e30e82d33d911b57c = $(`<div id="html_fada3d8583799d1e30e82d33d911b57c" style="width: 100.0%; height: 100.0%;"><b>PERENCO NORTH SINAI PETROLEUM LTD</b><br>Cairo, Cairo, Egypt<br>Support Activities for Mining<br>Independent<br>Membres impliqués :<br><ul><li>François Perrodo</li></ul><a href="https://www.dnb.com/site-search-results.html#BusinessDirectoryPageNumber=3&BusinessDirectorySearch=perenco&ContactDirectoryPageNumber=1&MarketplacePageNumber=1&SiteContentPageNumber=1&tab=Business%20Directory" target="_blank">Lien hypertexte</a></div>`)[0];
+                popup_c3beb97b25b695e8923f903811bc9160.setContent(html_fada3d8583799d1e30e82d33d911b57c);
+            
+        
+
+        marker_106db1976556262839db90ac94ec2678.bindPopup(popup_c3beb97b25b695e8923f903811bc9160)
+        ;
+
+        
+    
+    
+            var marker_2180f5d13a13fac1d0d9edc78eb63921 = L.marker(
+                [24.7736546, -78.0000547],
+                {
+}
+            ).addTo(marker_cluster_ac9e00f33df0dea406c415a4b1fa3f85);
+        
+    
+            var icon_1644cb4d2a9496ca697e8e5c120313d3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_2180f5d13a13fac1d0d9edc78eb63921.setIcon(icon_1644cb4d2a9496ca697e8e5c120313d3);
+        
+    
+        var popup_b680c776432f7c8bc3f800b0c24e3db1 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_3832b956707c143caf224f2132172699 = $(`<div id="html_3832b956707c143caf224f2132172699" style="width: 100.0%; height: 100.0%;"><b>PERENCO RDC S.A.</b><br>Bahamas<br>Management of Companies and Enterprises<br>Independent<br>Membres impliqués :<br><ul><li>François Perrodo</li></ul><a href="https://www.dnb.com/site-search-results.html#BusinessDirectoryPageNumber=3&BusinessDirectorySearch=perenco&ContactDirectoryPageNumber=1&MarketplacePageNumber=1&SiteContentPageNumber=1&tab=Business%20Directory" target="_blank">Lien hypertexte</a></div>`)[0];
+                popup_b680c776432f7c8bc3f800b0c24e3db1.setContent(html_3832b956707c143caf224f2132172699);
+            
+        
+
+        marker_2180f5d13a13fac1d0d9edc78eb63921.bindPopup(popup_b680c776432f7c8bc3f800b0c24e3db1)
+        ;
+
+        
+    
+    
+            var marker_f2ec361a8d9a2aef6a4bd825dc74fad8 = L.marker(
+                [25.0782266, -77.3383438],
+                {
+}
+            ).addTo(marker_cluster_ac9e00f33df0dea406c415a4b1fa3f85);
+        
+    
+            var icon_8fe767cd29a55212dc791c04eab34ca5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_f2ec361a8d9a2aef6a4bd825dc74fad8.setIcon(icon_8fe767cd29a55212dc791c04eab34ca5);
+        
+    
+        var popup_48002e83a3384797810ef67a96032793 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_a864077d15068181f8ecfc0062e92340 = $(`<div id="html_a864077d15068181f8ecfc0062e92340" style="width: 100.0%; height: 100.0%;"><b>PERENCO GABON S.A.</b><br>NASSAU, Bahamas<br>Management of Companies and Enterprises<br>Independent<br>Membres impliqués :<br><ul><li>François Perrodo</li></ul><a href="https://www.dnb.com/site-search-results.html#BusinessDirectoryPageNumber=3&BusinessDirectorySearch=perenco&ContactDirectoryPageNumber=1&MarketplacePageNumber=1&SiteContentPageNumber=1&tab=Business%20Directory" target="_blank">Lien hypertexte</a></div>`)[0];
+                popup_48002e83a3384797810ef67a96032793.setContent(html_a864077d15068181f8ecfc0062e92340);
+            
+        
+
+        marker_f2ec361a8d9a2aef6a4bd825dc74fad8.bindPopup(popup_48002e83a3384797810ef67a96032793)
+        ;
+
+        
+    
+    
+            var marker_49d7080dc5d7e4939fc0c5f5189b4c5f = L.marker(
+                [25.0782266, -77.3383438],
+                {
+}
+            ).addTo(marker_cluster_ac9e00f33df0dea406c415a4b1fa3f85);
+        
+    
+            var icon_7c2351d3e298deed775e894dd30610ae = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_49d7080dc5d7e4939fc0c5f5189b4c5f.setIcon(icon_7c2351d3e298deed775e894dd30610ae);
+        
+    
+        var popup_8cfca6357e3f0c9ee6f5409652f7e135 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_cccc707d9df3b2705e9b20fca00b303d = $(`<div id="html_cccc707d9df3b2705e9b20fca00b303d" style="width: 100.0%; height: 100.0%;"><b>Perenco International Limited</b><br>NASSAU, Bahamas<br>Management of Companies and Enterprises<br>Parent<br>Membres impliqués :<br><ul><li>François Perrodo</li></ul><a href="https://www.dnb.com/site-search-results.html#BusinessDirectoryPageNumber=3&BusinessDirectorySearch=perenco&ContactDirectoryPageNumber=1&MarketplacePageNumber=1&SiteContentPageNumber=1&tab=Business%20Directory" target="_blank">Lien hypertexte</a></div>`)[0];
+                popup_8cfca6357e3f0c9ee6f5409652f7e135.setContent(html_cccc707d9df3b2705e9b20fca00b303d);
+            
+        
+
+        marker_49d7080dc5d7e4939fc0c5f5189b4c5f.bindPopup(popup_8cfca6357e3f0c9ee6f5409652f7e135)
+        ;
+
+        
+    
+    
+            var marker_3597b062b4631f0a4f35c407cc8d3490 = L.marker(
+                [24.7736546, -78.0000547],
+                {
+}
+            ).addTo(marker_cluster_ac9e00f33df0dea406c415a4b1fa3f85);
+        
+    
+            var icon_4d0a506d112f8f8e82f548374f605166 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_3597b062b4631f0a4f35c407cc8d3490.setIcon(icon_4d0a506d112f8f8e82f548374f605166);
+        
+    
+        var popup_6e41aa8c731f3d39c0f99c02d851807a = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_545129444f17464edaeec4719bf0fc2f = $(`<div id="html_545129444f17464edaeec4719bf0fc2f" style="width: 100.0%; height: 100.0%;"><b>PERENCO GABON S.A. (MERGED WITH PERENCO INVESTMENTS S.A.)</b><br>Bahamas<br>Management of Companies and Enterprises<br>Independent<br>Membres impliqués :<br><ul><li>François Perrodo</li></ul><a href="https://www.dnb.com/site-search-results.html#BusinessDirectoryPageNumber=3&BusinessDirectorySearch=perenco&ContactDirectoryPageNumber=1&MarketplacePageNumber=1&SiteContentPageNumber=1&tab=Business%20Directory" target="_blank">Lien hypertexte</a></div>`)[0];
+                popup_6e41aa8c731f3d39c0f99c02d851807a.setContent(html_545129444f17464edaeec4719bf0fc2f);
+            
+        
+
+        marker_3597b062b4631f0a4f35c407cc8d3490.bindPopup(popup_6e41aa8c731f3d39c0f99c02d851807a)
+        ;
+
+        
+    
+    
+            var marker_a0c0ae43daa2d66839f985b10581d07f = L.marker(
+                [24.7736546, -78.0000547],
+                {
+}
+            ).addTo(marker_cluster_ac9e00f33df0dea406c415a4b1fa3f85);
+        
+    
+            var icon_9b33b2995a5c5e3dc39105aa4110ccf8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_a0c0ae43daa2d66839f985b10581d07f.setIcon(icon_9b33b2995a5c5e3dc39105aa4110ccf8);
+        
+    
+        var popup_49c40bb12efaf89af272b14890a7b9c6 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_41ef1640dae6c6642f5d5b25bdcd7390 = $(`<div id="html_41ef1640dae6c6642f5d5b25bdcd7390" style="width: 100.0%; height: 100.0%;"><b>PERENCO COTE D’IVOIRE SA</b><br>Bahamas<br>Management of Companies and Enterprises<br>Independent<br>Membres impliqués :<br><ul><li>François Perrodo</li></ul><a href="https://www.dnb.com/site-search-results.html#BusinessDirectoryPageNumber=3&BusinessDirectorySearch=perenco&ContactDirectoryPageNumber=1&MarketplacePageNumber=1&SiteContentPageNumber=1&tab=Business%20Directory" target="_blank">Lien hypertexte</a></div>`)[0];
+                popup_49c40bb12efaf89af272b14890a7b9c6.setContent(html_41ef1640dae6c6642f5d5b25bdcd7390);
+            
+        
+
+        marker_a0c0ae43daa2d66839f985b10581d07f.bindPopup(popup_49c40bb12efaf89af272b14890a7b9c6)
+        ;
+
+        
+    
+    
+            var marker_fab896de2c9feca90cfb08e1aa0773f1 = L.marker(
+                [40.4237276, -3.6899043],
+                {
+}
+            ).addTo(marker_cluster_ac9e00f33df0dea406c415a4b1fa3f85);
+        
+    
+            var icon_409384c172fcd661f9391210319ce5c2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_fab896de2c9feca90cfb08e1aa0773f1.setIcon(icon_409384c172fcd661f9391210319ce5c2);
+        
+    
+        var popup_5744e7192d3b8788a343ce4d3224da2e = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_4d14f160872b012ccd26c453e932df79 = $(`<div id="html_4d14f160872b012ccd26c453e932df79" style="width: 100.0%; height: 100.0%;"><b>PERENCO TRINIDAD & TOBAGO (HOLDINGS) ETVE SL.</b><br>MADRID, Madrid, Spain<br>Securities and Commodity Contracts Intermediation and Brokerage<br>Subsidiary<br>Membres impliqués :<br><ul><li>François Perrodo</li></ul><a href="https://www.dnb.com/site-search-results.html#BusinessDirectoryPageNumber=3&BusinessDirectorySearch=perenco&ContactDirectoryPageNumber=1&MarketplacePageNumber=1&SiteContentPageNumber=1&tab=Business%20Directory" target="_blank">Lien hypertexte</a></div>`)[0];
+                popup_5744e7192d3b8788a343ce4d3224da2e.setContent(html_4d14f160872b012ccd26c453e932df79);
+            
+        
+
+        marker_fab896de2c9feca90cfb08e1aa0773f1.bindPopup(popup_5744e7192d3b8788a343ce4d3224da2e)
+        ;
+
+        
+    
+    
+            var marker_0c5c3e0862b682320d5d8a3940aa6ad5 = L.marker(
+                [4.6533816, -74.0836333],
+                {
+}
+            ).addTo(marker_cluster_ac9e00f33df0dea406c415a4b1fa3f85);
+        
+    
+            var icon_665d7ef5ccb5cfc05ad7d673a6c58ded = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_0c5c3e0862b682320d5d8a3940aa6ad5.setIcon(icon_665d7ef5ccb5cfc05ad7d673a6c58ded);
+        
+    
+        var popup_e35e2244dbff4813d41e3bea9b40b1f8 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_81a99010cb8cb56de4f8736799260233 = $(`<div id="html_81a99010cb8cb56de4f8736799260233" style="width: 100.0%; height: 100.0%;"><b>FONDO DE LOS EMPLEADOS DE PERENCO COLOMBIA LIMITED</b><br>BOGOTA, Colombia<br>Insurance and Employee Benefit Funds<br>Independent<br>Membres impliqués :<br><ul><li>François Perrodo</li></ul><a href="https://www.dnb.com/site-search-results.html#BusinessDirectoryPageNumber=3&BusinessDirectorySearch=perenco&ContactDirectoryPageNumber=1&MarketplacePageNumber=1&SiteContentPageNumber=1&tab=Business%20Directory" target="_blank">Lien hypertexte</a></div>`)[0];
+                popup_e35e2244dbff4813d41e3bea9b40b1f8.setContent(html_81a99010cb8cb56de4f8736799260233);
+            
+        
+
+        marker_0c5c3e0862b682320d5d8a3940aa6ad5.bindPopup(popup_e35e2244dbff4813d41e3bea9b40b1f8)
+        ;
+
+        
+    
+    
+            var marker_8b967579c58ef2270d7140091b782c19 = L.marker(
+                [40.4237276, -3.6899043],
+                {
+}
+            ).addTo(marker_cluster_ac9e00f33df0dea406c415a4b1fa3f85);
+        
+    
+            var icon_b4fe862cd36c9d32648c00c0b94045fa = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_8b967579c58ef2270d7140091b782c19.setIcon(icon_b4fe862cd36c9d32648c00c0b94045fa);
+        
+    
+        var popup_deebc3f470d086e4769747a9395b5021 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_7bf30fd6d420e2fb94803bda3b5d2d70 = $(`<div id="html_7bf30fd6d420e2fb94803bda3b5d2d70" style="width: 100.0%; height: 100.0%;"><b>PERENCO VENEZUELA PETROLEO Y GAS ETVE SL</b><br>MADRID, Madrid, Spain<br>Management of Companies and Enterprises<br>Subsidiary<br>Membres impliqués :<br><ul><li>François Perrodo</li></ul><a href="https://www.dnb.com/site-search-results.html#BusinessDirectoryPageNumber=3&BusinessDirectorySearch=perenco&ContactDirectoryPageNumber=1&MarketplacePageNumber=1&SiteContentPageNumber=1&tab=Business%20Directory" target="_blank">Lien hypertexte</a></div>`)[0];
+                popup_deebc3f470d086e4769747a9395b5021.setContent(html_7bf30fd6d420e2fb94803bda3b5d2d70);
+            
+        
+
+        marker_8b967579c58ef2270d7140091b782c19.bindPopup(popup_deebc3f470d086e4769747a9395b5021)
+        ;
+
+        
+    
+    
+            var marker_d5a1dc55ce0df5d8907c3ff0570d4e17 = L.marker(
+                [54.1359924, -0.7986769],
+                {
+}
+            ).addTo(marker_cluster_ac9e00f33df0dea406c415a4b1fa3f85);
+        
+    
+            var icon_3f549e9900bfc0e8157820274982ce0e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_d5a1dc55ce0df5d8907c3ff0570d4e17.setIcon(icon_3f549e9900bfc0e8157820274982ce0e);
+        
+    
+        var popup_3082d509d415141a971c6c18dca31aa2 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_6c66c4c230ce4a3b4f51b6946c0b6ab7 = $(`<div id="html_6c66c4c230ce4a3b4f51b6946c0b6ab7" style="width: 100.0%; height: 100.0%;"><b>THIRD ENERGY UK GAS LIMITED</b><br>MALTON, United Kingdom<br>Support Activities for Mining<br>Subsidiary<br>Membres impliqués :<br><ul><li>François Perrodo</li></ul><a href="https://www.dnb.com/site-search-results.html#BusinessDirectoryPageNumber=3&BusinessDirectorySearch=perenco&ContactDirectoryPageNumber=1&MarketplacePageNumber=1&SiteContentPageNumber=1&tab=Business%20Directory" target="_blank">Lien hypertexte</a></div>`)[0];
+                popup_3082d509d415141a971c6c18dca31aa2.setContent(html_6c66c4c230ce4a3b4f51b6946c0b6ab7);
+            
+        
+
+        marker_d5a1dc55ce0df5d8907c3ff0570d4e17.bindPopup(popup_3082d509d415141a971c6c18dca31aa2)
+        ;
+
+        
+    
+    
+            var marker_5e35fc8f75f88a4fc2b1633cb57a587b = L.marker(
+                [53.3493795, -6.2605593],
+                {
+}
+            ).addTo(marker_cluster_ac9e00f33df0dea406c415a4b1fa3f85);
+        
+    
+            var icon_872454955c6a6988aff55839752434ee = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_5e35fc8f75f88a4fc2b1633cb57a587b.setIcon(icon_872454955c6a6988aff55839752434ee);
+        
+    
+        var popup_2ffbbefccb26f8967572ad487085702d = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_5817b8e29e8b3c8e23a731b2136602fa = $(`<div id="html_5817b8e29e8b3c8e23a731b2136602fa" style="width: 100.0%; height: 100.0%;"><b>PERENCO LIMITED</b><br>DUBLIN, Ireland<br>Machinery, Equipment, and Supplies Merchant Wholesalers<br>Independent<br>Membres impliqués :<br><ul><li>François Perrodo</li></ul><a href="https://www.dnb.com/site-search-results.html#BusinessDirectoryPageNumber=3&BusinessDirectorySearch=perenco&ContactDirectoryPageNumber=1&MarketplacePageNumber=1&SiteContentPageNumber=1&tab=Business%20Directory" target="_blank">Lien hypertexte</a></div>`)[0];
+                popup_2ffbbefccb26f8967572ad487085702d.setContent(html_5817b8e29e8b3c8e23a731b2136602fa);
+            
+        
+
+        marker_5e35fc8f75f88a4fc2b1633cb57a587b.bindPopup(popup_2ffbbefccb26f8967572ad487085702d)
+        ;
+
+        
+    
+    
+            var marker_507abfbe9f8cc9a576add56928afbe52 = L.marker(
+                [51.4893335, -0.14405508452768728],
+                {
+}
+            ).addTo(marker_cluster_ac9e00f33df0dea406c415a4b1fa3f85);
+        
+    
+            var icon_39f84927df32dc1a1077ad154677caa3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_507abfbe9f8cc9a576add56928afbe52.setIcon(icon_39f84927df32dc1a1077ad154677caa3);
+        
+    
+        var popup_e1aae1973009bc6689078f18e19d31ed = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_deb16e17538501330ed056621b497981 = $(`<div id="html_deb16e17538501330ed056621b497981" style="width: 100.0%; height: 100.0%;"><b>PERENCO INVESTMENTS (U.K.)</b><br>LONDON, United Kingdom<br>Securities and Commodity Contracts Intermediation and Brokerage<br>Subsidiary<br>Membres impliqués :<br><ul><li>François Perrodo</li></ul><a href="https://www.dnb.com/site-search-results.html#BusinessDirectoryPageNumber=3&BusinessDirectorySearch=perenco&ContactDirectoryPageNumber=1&MarketplacePageNumber=1&SiteContentPageNumber=1&tab=Business%20Directory" target="_blank">Lien hypertexte</a></div>`)[0];
+                popup_e1aae1973009bc6689078f18e19d31ed.setContent(html_deb16e17538501330ed056621b497981);
+            
+        
+
+        marker_507abfbe9f8cc9a576add56928afbe52.bindPopup(popup_e1aae1973009bc6689078f18e19d31ed)
+        ;
+
+        
+    
+    
+            var marker_1459a81c6cbe9fbd1b1c043aa538a79d = L.marker(
+                [51.4893335, -0.14405508452768728],
+                {
+}
+            ).addTo(marker_cluster_ac9e00f33df0dea406c415a4b1fa3f85);
+        
+    
+            var icon_2066950b4ea4918ba36aedcd39b84a8f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_1459a81c6cbe9fbd1b1c043aa538a79d.setIcon(icon_2066950b4ea4918ba36aedcd39b84a8f);
+        
+    
+        var popup_9b3bddd21804d8a4df7f7e08046bed06 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_ce938fa6f2796a1748ea2137cfa93a7b = $(`<div id="html_ce938fa6f2796a1748ea2137cfa93a7b" style="width: 100.0%; height: 100.0%;"><b>PERENCO UK PENSION TRUSTEE LIMITED</b><br>LONDON, United Kingdom<br>Insurance and Employee Benefit Funds<br>Subsidiary<br>Membres impliqués :<br><ul><li>François Perrodo</li></ul><a href="https://www.dnb.com/site-search-results.html#BusinessDirectoryPageNumber=3&BusinessDirectorySearch=perenco&ContactDirectoryPageNumber=1&MarketplacePageNumber=1&SiteContentPageNumber=1&tab=Business%20Directory" target="_blank">Lien hypertexte</a></div>`)[0];
+                popup_9b3bddd21804d8a4df7f7e08046bed06.setContent(html_ce938fa6f2796a1748ea2137cfa93a7b);
+            
+        
+
+        marker_1459a81c6cbe9fbd1b1c043aa538a79d.bindPopup(popup_9b3bddd21804d8a4df7f7e08046bed06)
+        ;
+
+        
+    
+    
+            var marker_00c58df3ddade8d6990ee8b460f45cee = L.marker(
+                [32.3040273, -64.7563086],
+                {
+}
+            ).addTo(marker_cluster_ac9e00f33df0dea406c415a4b1fa3f85);
+        
+    
+            var icon_2aad3b214288dd4ec5f38a9f7be56ed2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_00c58df3ddade8d6990ee8b460f45cee.setIcon(icon_2aad3b214288dd4ec5f38a9f7be56ed2);
+        
+    
+        var popup_db95fec65121a8e63fa34aa0b46e4234 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_80edc4e056dc151e796f62af10c6643d = $(`<div id="html_80edc4e056dc151e796f62af10c6643d" style="width: 100.0%; height: 100.0%;"><b>Perenco Congo (DRC), Ltd</b><br>Bermuda<br>Management of Companies and Enterprises<br>Independent<br>Membres impliqués :<br><ul><li>François Perrodo</li></ul><a href="https://www.dnb.com/site-search-results.html#BusinessDirectoryPageNumber=3&BusinessDirectorySearch=perenco&ContactDirectoryPageNumber=1&MarketplacePageNumber=1&SiteContentPageNumber=1&tab=Business%20Directory" target="_blank">Lien hypertexte</a></div>`)[0];
+                popup_db95fec65121a8e63fa34aa0b46e4234.setContent(html_80edc4e056dc151e796f62af10c6643d);
+            
+        
+
+        marker_00c58df3ddade8d6990ee8b460f45cee.bindPopup(popup_db95fec65121a8e63fa34aa0b46e4234)
+        ;
+
+        
+    
+    
+            var marker_942fb102c99186654c40c71eb91bb52a = L.marker(
+                [32.3040273, -64.7563086],
+                {
+}
+            ).addTo(marker_cluster_ac9e00f33df0dea406c415a4b1fa3f85);
+        
+    
+            var icon_7471c72b0e349fd9ec835b0822a45f67 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_942fb102c99186654c40c71eb91bb52a.setIcon(icon_7471c72b0e349fd9ec835b0822a45f67);
+        
+    
+        var popup_9093c9242c5b3e67c3b9cb69a2706515 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_bf2fd6562dcf79ea369ef67554675d16 = $(`<div id="html_bf2fd6562dcf79ea369ef67554675d16" style="width: 100.0%; height: 100.0%;"><b>Perenco Oil Trading Limited</b><br>Bermuda<br>Management of Companies and Enterprises<br>Independent<br>Membres impliqués :<br><ul><li>François Perrodo</li></ul><a href="https://www.dnb.com/site-search-results.html#BusinessDirectoryPageNumber=3&BusinessDirectorySearch=perenco&ContactDirectoryPageNumber=1&MarketplacePageNumber=1&SiteContentPageNumber=1&tab=Business%20Directory" target="_blank">Lien hypertexte</a></div>`)[0];
+                popup_9093c9242c5b3e67c3b9cb69a2706515.setContent(html_bf2fd6562dcf79ea369ef67554675d16);
+            
+        
+
+        marker_942fb102c99186654c40c71eb91bb52a.bindPopup(popup_9093c9242c5b3e67c3b9cb69a2706515)
+        ;
+
+        
+    
+    
+            var marker_85d8185ecbc6ba828bd7bf859994c5cd = L.marker(
+                [24.7736546, -78.0000547],
+                {
+}
+            ).addTo(marker_cluster_ac9e00f33df0dea406c415a4b1fa3f85);
+        
+    
+            var icon_05fca2a25155ef1a9b0b1ecceeb0b55c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_85d8185ecbc6ba828bd7bf859994c5cd.setIcon(icon_05fca2a25155ef1a9b0b1ecceeb0b55c);
+        
+    
+        var popup_ed23beac7bd85e6119c5a9f76ec82e10 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_5a3f59f78d16ea67a67f785774ef4f60 = $(`<div id="html_5a3f59f78d16ea67a67f785774ef4f60" style="width: 100.0%; height: 100.0%;"><b>PERENCO SOUTH AMERICA LIMITED</b><br>Bahamas<br>Management of Companies and Enterprises<br>Independent<br>Membres impliqués :<br><ul><li>François Perrodo</li></ul><a href="https://www.dnb.com/site-search-results.html#BusinessDirectoryPageNumber=3&BusinessDirectorySearch=perenco&ContactDirectoryPageNumber=1&MarketplacePageNumber=1&SiteContentPageNumber=1&tab=Business%20Directory" target="_blank">Lien hypertexte</a></div>`)[0];
+                popup_ed23beac7bd85e6119c5a9f76ec82e10.setContent(html_5a3f59f78d16ea67a67f785774ef4f60);
+            
+        
+
+        marker_85d8185ecbc6ba828bd7bf859994c5cd.bindPopup(popup_ed23beac7bd85e6119c5a9f76ec82e10)
+        ;
+
+        
+    
+    
+            var marker_bba0f9ce19012f34cf46769a5e519893 = L.marker(
+                [24.7736546, -78.0000547],
+                {
+}
+            ).addTo(marker_cluster_ac9e00f33df0dea406c415a4b1fa3f85);
+        
+    
+            var icon_a50d191d43fd3133cf11cf555ba33083 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_bba0f9ce19012f34cf46769a5e519893.setIcon(icon_a50d191d43fd3133cf11cf555ba33083);
+        
+    
+        var popup_68ca8f99a11762ef30bd08b97682864b = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_239e63817f3a83b361bfd14deb6b6f7b = $(`<div id="html_239e63817f3a83b361bfd14deb6b6f7b" style="width: 100.0%; height: 100.0%;"><b>PERENCO EASTERN MEDITERRANEAN LIMITED</b><br>Bahamas<br>Management of Companies and Enterprises<br>Independent<br>Membres impliqués :<br><ul><li>François Perrodo</li></ul><a href="https://www.dnb.com/site-search-results.html#BusinessDirectoryPageNumber=3&BusinessDirectorySearch=perenco&ContactDirectoryPageNumber=1&MarketplacePageNumber=1&SiteContentPageNumber=1&tab=Business%20Directory" target="_blank">Lien hypertexte</a></div>`)[0];
+                popup_68ca8f99a11762ef30bd08b97682864b.setContent(html_239e63817f3a83b361bfd14deb6b6f7b);
+            
+        
+
+        marker_bba0f9ce19012f34cf46769a5e519893.bindPopup(popup_68ca8f99a11762ef30bd08b97682864b)
+        ;
+
+        
+    
+    
+            var marker_c8460837ad31f767eb6819cdff83fdbd = L.marker(
+                [24.7736546, -78.0000547],
+                {
+}
+            ).addTo(marker_cluster_ac9e00f33df0dea406c415a4b1fa3f85);
+        
+    
+            var icon_1285941037dcc307875fb6988bd63c03 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_c8460837ad31f767eb6819cdff83fdbd.setIcon(icon_1285941037dcc307875fb6988bd63c03);
+        
+    
+        var popup_45e8f133964e9d4fe9389ab02359cf2e = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_37cc0f97ac1c985ad4739743942df8f4 = $(`<div id="html_37cc0f97ac1c985ad4739743942df8f4" style="width: 100.0%; height: 100.0%;"><b>PERENCO NIGERIA LIMITED</b><br>Bahamas<br>Management of Companies and Enterprises<br>Independent<br>Membres impliqués :<br><ul><li>François Perrodo</li></ul><a href="https://www.dnb.com/site-search-results.html#BusinessDirectoryPageNumber=3&BusinessDirectorySearch=perenco&ContactDirectoryPageNumber=1&MarketplacePageNumber=1&SiteContentPageNumber=1&tab=Business%20Directory" target="_blank">Lien hypertexte</a></div>`)[0];
+                popup_45e8f133964e9d4fe9389ab02359cf2e.setContent(html_37cc0f97ac1c985ad4739743942df8f4);
+            
+        
+
+        marker_c8460837ad31f767eb6819cdff83fdbd.bindPopup(popup_45e8f133964e9d4fe9389ab02359cf2e)
+        ;
+
+        
+    
+    
+            var marker_6d1b8430bba8ce5ef6858f9c965ad79b = L.marker(
+                [25.0782266, -77.3383438],
+                {
+}
+            ).addTo(marker_cluster_ac9e00f33df0dea406c415a4b1fa3f85);
+        
+    
+            var icon_6c1ef62813760e8cd18d8303ca12e278 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_6d1b8430bba8ce5ef6858f9c965ad79b.setIcon(icon_6c1ef62813760e8cd18d8303ca12e278);
+        
+    
+        var popup_1210de8d8771142fbc52298ddceccc53 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_10147f04eadf8fd30cdfd6eb8a69883f = $(`<div id="html_10147f04eadf8fd30cdfd6eb8a69883f" style="width: 100.0%; height: 100.0%;"><b>Perenco Ecuador Limited</b><br>NASSAU, Bahamas<br>Management of Companies and Enterprises<br>Independent<br>Membres impliqués :<br><ul><li>François Perrodo</li></ul><a href="https://www.dnb.com/site-search-results.html#BusinessDirectoryPageNumber=3&BusinessDirectorySearch=perenco&ContactDirectoryPageNumber=1&MarketplacePageNumber=1&SiteContentPageNumber=1&tab=Business%20Directory" target="_blank">Lien hypertexte</a></div>`)[0];
+                popup_1210de8d8771142fbc52298ddceccc53.setContent(html_10147f04eadf8fd30cdfd6eb8a69883f);
+            
+        
+
+        marker_6d1b8430bba8ce5ef6858f9c965ad79b.bindPopup(popup_1210de8d8771142fbc52298ddceccc53)
+        ;
+
+        
+    
+    
+            var marker_9e01a7f7e8aa57eaa9207a2228a57a55 = L.marker(
+                [25.0782266, -77.3383438],
+                {
+}
+            ).addTo(marker_cluster_ac9e00f33df0dea406c415a4b1fa3f85);
+        
+    
+            var icon_5040ed4b32f5ebf38e9aff29cc7cb072 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_9e01a7f7e8aa57eaa9207a2228a57a55.setIcon(icon_5040ed4b32f5ebf38e9aff29cc7cb072);
+        
+    
+        var popup_e2212715442c453cf4d1204d8058b904 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_c8f030e9fa48732f10d9577a8412a0b7 = $(`<div id="html_c8f030e9fa48732f10d9577a8412a0b7" style="width: 100.0%; height: 100.0%;"><b>Perenco Tunisia Oil & Gas Limited</b><br>NASSAU, Bahamas<br>Management of Companies and Enterprises<br>Independent<br>Membres impliqués :<br><ul><li>François Perrodo</li></ul><a href="https://www.dnb.com/site-search-results.html#BusinessDirectoryPageNumber=3&BusinessDirectorySearch=perenco&ContactDirectoryPageNumber=1&MarketplacePageNumber=1&SiteContentPageNumber=1&tab=Business%20Directory" target="_blank">Lien hypertexte</a></div>`)[0];
+                popup_e2212715442c453cf4d1204d8058b904.setContent(html_c8f030e9fa48732f10d9577a8412a0b7);
+            
+        
+
+        marker_9e01a7f7e8aa57eaa9207a2228a57a55.bindPopup(popup_e2212715442c453cf4d1204d8058b904)
+        ;
+
+        
+    
+    
+            var marker_7613fb7976824fa8d6ac26a3fd62c6ce = L.marker(
+                [25.0782266, -77.3383438],
+                {
+}
+            ).addTo(marker_cluster_ac9e00f33df0dea406c415a4b1fa3f85);
+        
+    
+            var icon_b9633aa75916a6ec9b4936e736812c1e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_7613fb7976824fa8d6ac26a3fd62c6ce.setIcon(icon_b9633aa75916a6ec9b4936e736812c1e);
+        
+    
+        var popup_438a6d3740ec89c81da7118152b1e436 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_07cac7393254feb4f67c60989343f8d5 = $(`<div id="html_07cac7393254feb4f67c60989343f8d5" style="width: 100.0%; height: 100.0%;"><b>Perenco Guatemala Limited</b><br>NASSAU, Bahamas<br>Management of Companies and Enterprises<br>Independent<br>Membres impliqués :<br><ul><li>François Perrodo</li></ul><a href="https://www.dnb.com/site-search-results.html#BusinessDirectoryPageNumber=3&BusinessDirectorySearch=perenco&ContactDirectoryPageNumber=1&MarketplacePageNumber=1&SiteContentPageNumber=1&tab=Business%20Directory" target="_blank">Lien hypertexte</a></div>`)[0];
+                popup_438a6d3740ec89c81da7118152b1e436.setContent(html_07cac7393254feb4f67c60989343f8d5);
+            
+        
+
+        marker_7613fb7976824fa8d6ac26a3fd62c6ce.bindPopup(popup_438a6d3740ec89c81da7118152b1e436)
+        ;
+
+        
+    
+    
+            var marker_3588ae3b4fe2168ba39f97e647268cc0 = L.marker(
+                [24.7736546, -78.0000547],
+                {
+}
+            ).addTo(marker_cluster_ac9e00f33df0dea406c415a4b1fa3f85);
+        
+    
+            var icon_e28587dcacdfb300dd4624bc217ae674 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_3588ae3b4fe2168ba39f97e647268cc0.setIcon(icon_e28587dcacdfb300dd4624bc217ae674);
+        
+    
+        var popup_eb2e9f7e4ce95d95bd982b41a4fcbd1d = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_98319556df847a926521b65961337e09 = $(`<div id="html_98319556df847a926521b65961337e09" style="width: 100.0%; height: 100.0%;"><b>PERENCO EXPLORATION GABON S.A. LIMITED</b><br>Bahamas<br>Management of Companies and Enterprises<br>Independent<br>Membres impliqués :<br><ul><li>François Perrodo</li></ul><a href="https://www.dnb.com/site-search-results.html#BusinessDirectoryPageNumber=3&BusinessDirectorySearch=perenco&ContactDirectoryPageNumber=1&MarketplacePageNumber=1&SiteContentPageNumber=1&tab=Business%20Directory" target="_blank">Lien hypertexte</a></div>`)[0];
+                popup_eb2e9f7e4ce95d95bd982b41a4fcbd1d.setContent(html_98319556df847a926521b65961337e09);
+            
+        
+
+        marker_3588ae3b4fe2168ba39f97e647268cc0.bindPopup(popup_eb2e9f7e4ce95d95bd982b41a4fcbd1d)
+        ;
+
+        
+    
+    
+            var marker_32094ebfd3a05c5d061452ba0d1192e1 = L.marker(
+                [24.7736546, -78.0000547],
+                {
+}
+            ).addTo(marker_cluster_ac9e00f33df0dea406c415a4b1fa3f85);
+        
+    
+            var icon_5038a6728a05cc02245a6c80a3401562 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_32094ebfd3a05c5d061452ba0d1192e1.setIcon(icon_5038a6728a05cc02245a6c80a3401562);
+        
+    
+        var popup_fef4a74f4b3280fe8ead9adc32e2d874 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_0936742122e8b7454b50f549d43d0319 = $(`<div id="html_0936742122e8b7454b50f549d43d0319" style="width: 100.0%; height: 100.0%;"><b>PERENCO INVESTMENT GABON LIMITED</b><br>Bahamas<br>Management of Companies and Enterprises<br>Independent<br>Membres impliqués :<br><ul><li>François Perrodo</li></ul><a href="https://www.dnb.com/site-search-results.html#BusinessDirectoryPageNumber=3&BusinessDirectorySearch=perenco&ContactDirectoryPageNumber=1&MarketplacePageNumber=1&SiteContentPageNumber=1&tab=Business%20Directory" target="_blank">Lien hypertexte</a></div>`)[0];
+                popup_fef4a74f4b3280fe8ead9adc32e2d874.setContent(html_0936742122e8b7454b50f549d43d0319);
+            
+        
+
+        marker_32094ebfd3a05c5d061452ba0d1192e1.bindPopup(popup_fef4a74f4b3280fe8ead9adc32e2d874)
+        ;
+
+        
+    
+    
+            var marker_790443a9e93d700761086789ab265661 = L.marker(
+                [48.8817377, 2.3079363],
+                {
+}
+            ).addTo(marker_cluster_ac9e00f33df0dea406c415a4b1fa3f85);
+        
+    
+            var icon_ae22ef7a9a03608cc5b9a5c539ddfa09 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_790443a9e93d700761086789ab265661.setIcon(icon_ae22ef7a9a03608cc5b9a5c539ddfa09);
+        
+    
+        var popup_3cb30b53591977f97d63acc2249ecdc4 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_ed31aeef39d79ed4a79b05f55a710f49 = $(`<div id="html_ed31aeef39d79ed4a79b05f55a710f49" style="width: 100.0%; height: 100.0%;"><b>SC 22 LA PEROUSE (389518598)</b><br>7 RUE DE LOGELBACH, 75017 PARIS<br>Promotion immobilière de logements<br>Non spécifié<br>Membres impliqués :<br><ul><li>François Perrodo</li><li>Ka Yee (Carrie) Wong/Perrodo (mère)</li><li>Nathalie Perrodo Samani (sœur)</li><li>Bertrand Nicolas Hubert Perrodo (frère)</li></ul><a href="https://www.pappers.fr/entreprise/sc-22-la-perouse-389518598" target="_blank">Lien hypertexte</a></div>`)[0];
+                popup_3cb30b53591977f97d63acc2249ecdc4.setContent(html_ed31aeef39d79ed4a79b05f55a710f49);
+            
+        
+
+        marker_790443a9e93d700761086789ab265661.bindPopup(popup_3cb30b53591977f97d63acc2249ecdc4)
+        ;
+
+        
+    
+    
+            var marker_6ce41b36bcdfd6196bb235bb71d24cc0 = L.marker(
+                [48.8817377, 2.3079363],
+                {
+}
+            ).addTo(marker_cluster_ac9e00f33df0dea406c415a4b1fa3f85);
+        
+    
+            var icon_e879934c233ae58ea567f0dfc8bc8ad9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_6ce41b36bcdfd6196bb235bb71d24cc0.setIcon(icon_e879934c233ae58ea567f0dfc8bc8ad9);
+        
+    
+        var popup_208b9797fde10ec608760783b0dd98f6 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_ca41c8b2ebc72eb3e31f86fe3708f88e = $(`<div id="html_ca41c8b2ebc72eb3e31f86fe3708f88e" style="width: 100.0%; height: 100.0%;"><b>SOCIETE CIVILE DUMONT D'URVILLE 25 (480795384)</b><br>7 RUE DE LOGELBACH 75017 PARIS <br>Location de terrains et d'autres biens immobiliers<br>Non spécifié<br>Membres impliqués :<br><ul><li>François Perrodo</li><li>Ka Yee (Carrie) Wong/Perrodo (mère)</li><li>Nathalie Perrodo Samani (sœur)</li><li>Bertrand Nicolas Hubert Perrodo (frère)</li></ul><a href="https://www.pappers.fr/entreprise/societe-civile-dumont-durville-25-480795384" target="_blank">Lien hypertexte</a></div>`)[0];
+                popup_208b9797fde10ec608760783b0dd98f6.setContent(html_ca41c8b2ebc72eb3e31f86fe3708f88e);
+            
+        
+
+        marker_6ce41b36bcdfd6196bb235bb71d24cc0.bindPopup(popup_208b9797fde10ec608760783b0dd98f6)
+        ;
+
+        
+    
+    
+            var marker_020c104dd3fa198fddb41421ce93d093 = L.marker(
+                [45.4151023, 6.6341787],
+                {
+}
+            ).addTo(marker_cluster_ac9e00f33df0dea406c415a4b1fa3f85);
+        
+    
+            var icon_41531cba8b8886471dcedbaee90db423 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_020c104dd3fa198fddb41421ce93d093.setIcon(icon_41531cba8b8886471dcedbaee90db423);
+        
+    
+        var popup_03dc30e0570d2902f4d660b23b99f063 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_0465f3092dc3ab063014862289bd4bcb = $(`<div id="html_0465f3092dc3ab063014862289bd4bcb" style="width: 100.0%; height: 100.0%;"><b>SCI TRISKELL (453 958 688)</b><br>COURCHEVEL 1850, 73120 COURCHEVEL<br>Location de terrains et d'autres biens immobiliers<br>Non spécifié<br>Membres impliqués :<br><ul><li>François Perrodo</li><li>Nathalie Perrodo Samani (sœur)</li><li>Bertrand Nicolas Hubert Perrodo (frère)</li></ul><a href="https://www.pappers.fr/entreprise/sci-triskell-453958688" target="_blank">Lien hypertexte</a></div>`)[0];
+                popup_03dc30e0570d2902f4d660b23b99f063.setContent(html_0465f3092dc3ab063014862289bd4bcb);
+            
+        
+
+        marker_020c104dd3fa198fddb41421ce93d093.bindPopup(popup_03dc30e0570d2902f4d660b23b99f063)
+        ;
+
+        
+    
+    
+            var marker_6db4de7fd41622acace26dd320f2928c = L.marker(
+                [48.8817377, 2.3079363],
+                {
+}
+            ).addTo(marker_cluster_ac9e00f33df0dea406c415a4b1fa3f85);
+        
+    
+            var icon_3366d02cb5ab5b5c121d1c191d7d3a51 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_6db4de7fd41622acace26dd320f2928c.setIcon(icon_3366d02cb5ab5b5c121d1c191d7d3a51);
+        
+    
+        var popup_2c9c06349890f8370c8e459ba48a1263 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_07caa56bf4d046331d1bba22b1fc115a = $(`<div id="html_07caa56bf4d046331d1bba22b1fc115a" style="width: 100.0%; height: 100.0%;"><b>KELT (662 034 990)</b><br>7 RUE DE LOGELBACH, 75017 PARIS<br>Autres activités de soutien aux entreprises n.c.a.<br>Non spécifié<br>Membres impliqués :<br><ul><li>François Perrodo</li><li>Nathalie Perrodo Samani (sœur)</li><li>Bertrand Nicolas Hubert Perrodo (frère)</li></ul><a href="https://www.pappers.fr/entreprise/kelt-662034990" target="_blank">Lien hypertexte</a></div>`)[0];
+                popup_2c9c06349890f8370c8e459ba48a1263.setContent(html_07caa56bf4d046331d1bba22b1fc115a);
+            
+        
+
+        marker_6db4de7fd41622acace26dd320f2928c.bindPopup(popup_2c9c06349890f8370c8e459ba48a1263)
+        ;
+
+        
+    
+    
+            var marker_60157976b0e615f5a987358118d1daa5 = L.marker(
+                [48.8817377, 2.3079363],
+                {
+}
+            ).addTo(marker_cluster_ac9e00f33df0dea406c415a4b1fa3f85);
+        
+    
+            var icon_d9d5e946e77f089cac0ffc55830f3430 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_60157976b0e615f5a987358118d1daa5.setIcon(icon_d9d5e946e77f089cac0ffc55830f3430);
+        
+    
+        var popup_50f489b486e7dd9a7b4fbaa357b1c262 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_6276d953d786a4b476f96b92e131bfed = $(`<div id="html_6276d953d786a4b476f96b92e131bfed" style="width: 100.0%; height: 100.0%;"><b>SCI EHANOU (848 945 580)</b><br>7 RUE DE LOGELBACH, 75017 PARIS<br>Location de terrains et d'autres biens immobiliers<br>Non spécifié<br>Membres impliqués :<br><ul><li>François Perrodo</li><li>Ka Yee (Carrie) Wong/Perrodo (mère)</li></ul><a href="https://www.pappers.fr/entreprise/sci-ehanou-848945580" target="_blank">Lien hypertexte</a></div>`)[0];
+                popup_50f489b486e7dd9a7b4fbaa357b1c262.setContent(html_6276d953d786a4b476f96b92e131bfed);
+            
+        
+
+        marker_60157976b0e615f5a987358118d1daa5.bindPopup(popup_50f489b486e7dd9a7b4fbaa357b1c262)
+        ;
+
+        
+    
+    
+            var marker_bf19a0d1bf8ab4484016de1e83ff86a5 = L.marker(
+                [48.8817377, 2.3079363],
+                {
+}
+            ).addTo(marker_cluster_ac9e00f33df0dea406c415a4b1fa3f85);
+        
+    
+            var icon_bbbe2558fa4097144f9f97751263f18d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_bf19a0d1bf8ab4484016de1e83ff86a5.setIcon(icon_bbbe2558fa4097144f9f97751263f18d);
+        
+    
+        var popup_1a3cc4f1c25ad876830ef9d886cc0371 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_8aac53f65e9e03f1be02c47782003edd = $(`<div id="html_8aac53f65e9e03f1be02c47782003edd" style="width: 100.0%; height: 100.0%;"><b>SCI NAMASTE (890 444 748)</b><br>7 RUE DE LOGELBACH, 75017 PARIS<br>Location de terrains et d'autres biens immobiliers<br>Non spécifié<br>Membres impliqués :<br><ul><li>François Perrodo</li><li>Nathalie Perrodo Samani (sœur)</li></ul><a href="https://www.pappers.fr/entreprise/sci-namaste-890444748" target="_blank">Lien hypertexte</a></div>`)[0];
+                popup_1a3cc4f1c25ad876830ef9d886cc0371.setContent(html_8aac53f65e9e03f1be02c47782003edd);
+            
+        
+
+        marker_bf19a0d1bf8ab4484016de1e83ff86a5.bindPopup(popup_1a3cc4f1c25ad876830ef9d886cc0371)
+        ;
+
+        
+    
+    
+            var marker_626ffa16af0ecac9e9fe9bada35bf394 = L.marker(
+                [48.8817377, 2.3079363],
+                {
+}
+            ).addTo(marker_cluster_ac9e00f33df0dea406c415a4b1fa3f85);
+        
+    
+            var icon_b27d3a55897e7da9811016fe1cddf49f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_626ffa16af0ecac9e9fe9bada35bf394.setIcon(icon_b27d3a55897e7da9811016fe1cddf49f);
+        
+    
+        var popup_b5e7694842f4be213ed98cac26b2cebe = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_d360d622eab8c7feacd546dc033299e4 = $(`<div id="html_d360d622eab8c7feacd546dc033299e4" style="width: 100.0%; height: 100.0%;"><b>SCI TETRAS LYRE (893 704 635) </b><br>7 RUE DE LOGELBACH, 75017 PARIS<br>Location de terrains et d'autres biens immobiliers<br>Non spécifié<br>Membres impliqués :<br><ul><li>François Perrodo</li><li>Nathalie Perrodo Samani (sœur)</li></ul><a href="https://www.pappers.fr/entreprise/sci-tetras-lyre-893704635" target="_blank">Lien hypertexte</a></div>`)[0];
+                popup_b5e7694842f4be213ed98cac26b2cebe.setContent(html_d360d622eab8c7feacd546dc033299e4);
+            
+        
+
+        marker_626ffa16af0ecac9e9fe9bada35bf394.bindPopup(popup_b5e7694842f4be213ed98cac26b2cebe)
+        ;
+
+        
+    
+    
+            var marker_5f68ffdeeee55cbf7780c064c40b7994 = L.marker(
+                [48.8817377, 2.3079363],
+                {
+}
+            ).addTo(marker_cluster_ac9e00f33df0dea406c415a4b1fa3f85);
+        
+    
+            var icon_4fed7206ad0eb6ebd1226b811e00e2b8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_5f68ffdeeee55cbf7780c064c40b7994.setIcon(icon_4fed7206ad0eb6ebd1226b811e00e2b8);
+        
+    
+        var popup_0acad885819b5f9a798761e73e3003a6 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_7b02930eb8bd0eca4d2f960f66f06f89 = $(`<div id="html_7b02930eb8bd0eca4d2f960f66f06f89" style="width: 100.0%; height: 100.0%;"><b>SCI LES DAUMAS (805 295 201)</b><br>7 RUE DE LOGELBACH, 75017 PARIS<br>Location de terrains et d'autres biens immobiliers<br>Non spécifié<br>Membres impliqués :<br><ul><li>François Perrodo</li><li>Natacha Tatiana Popoff (femme)</li></ul><a href="https://www.pappers.fr/entreprise/sci-les-daumas-805295201" target="_blank">Lien hypertexte</a></div>`)[0];
+                popup_0acad885819b5f9a798761e73e3003a6.setContent(html_7b02930eb8bd0eca4d2f960f66f06f89);
+            
+        
+
+        marker_5f68ffdeeee55cbf7780c064c40b7994.bindPopup(popup_0acad885819b5f9a798761e73e3003a6)
+        ;
+
+        
+    
+    
+            var marker_88a465d8ad68c8ed1bd7eb53f433d187 = L.marker(
+                [48.8817377, 2.3079363],
+                {
+}
+            ).addTo(marker_cluster_ac9e00f33df0dea406c415a4b1fa3f85);
+        
+    
+            var icon_dcf9a0e497051fc738919194aaaf885a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_88a465d8ad68c8ed1bd7eb53f433d187.setIcon(icon_dcf9a0e497051fc738919194aaaf885a);
+        
+    
+        var popup_434b76d4e59f972018db838afd89dad0 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_14988e2fa3d31947598b202e2f48bbe7 = $(`<div id="html_14988e2fa3d31947598b202e2f48bbe7" style="width: 100.0%; height: 100.0%;"><b>SAM - LONG (481 341 188)</b><br>7 RUE DE LOGELBACH, 75017 PARIS<br>Activités des sociétés holding <br>Non spécifié<br>Membres impliqués :<br><ul><li>François Perrodo</li><li>Nathalie Perrodo Samani (sœur)</li><li>Bertrand Nicolas Hubert Perrodo (frère)</li></ul><a href="https://www.pappers.fr/entreprise/sam-long-481341188" target="_blank">Lien hypertexte</a></div>`)[0];
+                popup_434b76d4e59f972018db838afd89dad0.setContent(html_14988e2fa3d31947598b202e2f48bbe7);
+            
+        
+
+        marker_88a465d8ad68c8ed1bd7eb53f433d187.bindPopup(popup_434b76d4e59f972018db838afd89dad0)
+        ;
+
+        
+    
+    
+            var marker_abeded2d6cee73d2e30e6df06d274e51 = L.marker(
+                [48.8817377, 2.3079363],
+                {
+}
+            ).addTo(marker_cluster_ac9e00f33df0dea406c415a4b1fa3f85);
+        
+    
+            var icon_cbcc185ff20d389d84e12064dc261d4d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_abeded2d6cee73d2e30e6df06d274e51.setIcon(icon_cbcc185ff20d389d84e12064dc261d4d);
+        
+    
+        var popup_7868c32b99d1e3d4f9ee36f930c52805 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_fa212c4081f3d997f161191a34754473 = $(`<div id="html_fa212c4081f3d997f161191a34754473" style="width: 100.0%; height: 100.0%;"><b>HEOL (812 928 125)</b><br>7 RUE DE LOGELBACH, 75017 PARIS<br>Location de terrains et d'autres biens immobiliers<br>Non spécifié<br>Membres impliqués :<br><ul><li>François Perrodo</li><li>Nathalie Perrodo Samani (sœur)</li></ul><a href="https://www.pappers.fr/entreprise/heol-812928125" target="_blank">Lien hypertexte</a></div>`)[0];
+                popup_7868c32b99d1e3d4f9ee36f930c52805.setContent(html_fa212c4081f3d997f161191a34754473);
+            
+        
+
+        marker_abeded2d6cee73d2e30e6df06d274e51.bindPopup(popup_7868c32b99d1e3d4f9ee36f930c52805)
+        ;
+
+        
+    
+    
+            var marker_fef9d423a8676a28010307ad0f714e64 = L.marker(
+                [48.8817377, 2.3079363],
+                {
+}
+            ).addTo(marker_cluster_ac9e00f33df0dea406c415a4b1fa3f85);
+        
+    
+            var icon_0f3b606a678866d97cabccf7d7fbc284 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_fef9d423a8676a28010307ad0f714e64.setIcon(icon_0f3b606a678866d97cabccf7d7fbc284);
+        
+    
+        var popup_4bf6a9db5cbba62b3ceedc4e1eff684a = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_05e05dc143f0ab644b28108391f738eb = $(`<div id="html_05e05dc143f0ab644b28108391f738eb" style="width: 100.0%; height: 100.0%;"><b>SCI ASTER (901 632 174)</b><br>7 RUE DE LOGELBACH, 75017 PARIS<br>Location de terrains et d'autres biens immobiliers<br>Non spécifié<br>Membres impliqués :<br><ul><li>François Perrodo</li><li>Nathalie Perrodo Samani (sœur)</li></ul><a href="https://www.pappers.fr/entreprise/sci-aster-901632174" target="_blank">Lien hypertexte</a></div>`)[0];
+                popup_4bf6a9db5cbba62b3ceedc4e1eff684a.setContent(html_05e05dc143f0ab644b28108391f738eb);
+            
+        
+
+        marker_fef9d423a8676a28010307ad0f714e64.bindPopup(popup_4bf6a9db5cbba62b3ceedc4e1eff684a)
+        ;
+
+        
+    
+    
+            var marker_94e5921a6c82009ff3be184bbd5bfa12 = L.marker(
+                [48.8817377, 2.3079363],
+                {
+}
+            ).addTo(marker_cluster_ac9e00f33df0dea406c415a4b1fa3f85);
+        
+    
+            var icon_4dfca3430b713cbb1d4fe7f673bb16e2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_94e5921a6c82009ff3be184bbd5bfa12.setIcon(icon_4dfca3430b713cbb1d4fe7f673bb16e2);
+        
+    
+        var popup_39000fea935e35f277192b284760cc6e = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_e1a9a89c98aea620fc6f00e3442a9c05 = $(`<div id="html_e1a9a89c98aea620fc6f00e3442a9c05" style="width: 100.0%; height: 100.0%;"><b>SCI NOUSHKA (901 667 949)</b><br>7 RUE DE LOGELBACH, 75017 PARIS<br>Location de terrains et d'autres biens immobiliers<br>Non spécifié<br>Membres impliqués :<br><ul><li>François Perrodo</li><li>Nathalie Perrodo Samani (sœur)</li></ul><a href="pappers.fr/entreprise/sci-noushka-901667949" target="_blank">Lien hypertexte</a></div>`)[0];
+                popup_39000fea935e35f277192b284760cc6e.setContent(html_e1a9a89c98aea620fc6f00e3442a9c05);
+            
+        
+
+        marker_94e5921a6c82009ff3be184bbd5bfa12.bindPopup(popup_39000fea935e35f277192b284760cc6e)
+        ;
+
+        
+    
+    
+            var marker_7f952ed7272687ebd2e4d9f125088635 = L.marker(
+                [48.8817377, 2.3079363],
+                {
+}
+            ).addTo(marker_cluster_ac9e00f33df0dea406c415a4b1fa3f85);
+        
+    
+            var icon_440f8a49d07ff6da8718cc97a5bf5a2d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_7f952ed7272687ebd2e4d9f125088635.setIcon(icon_440f8a49d07ff6da8718cc97a5bf5a2d);
+        
+    
+        var popup_fd4dbc4f7d79d51aafff4b938174eedf = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_e378fa2cd8dd61f81727727711a7635b = $(`<div id="html_e378fa2cd8dd61f81727727711a7635b" style="width: 100.0%; height: 100.0%;"><b>SCI MENTAWAIS (803 352 731)</b><br>7 RUE DE LOGELBACH, 75017 PARIS<br>Location de terrains et d'autres biens immobiliers<br>Non spécifié<br>Membres impliqués :<br><ul><li>François Perrodo</li><li>Bertrand Nicolas Hubert Perrodo (frère)</li></ul><a href="https://www.pappers.fr/entreprise/sci-mentawais-803352731" target="_blank">Lien hypertexte</a></div>`)[0];
+                popup_fd4dbc4f7d79d51aafff4b938174eedf.setContent(html_e378fa2cd8dd61f81727727711a7635b);
+            
+        
+
+        marker_7f952ed7272687ebd2e4d9f125088635.bindPopup(popup_fd4dbc4f7d79d51aafff4b938174eedf)
+        ;
+
+        
+    
+    
+            var marker_fa37b42c59565b88c856724df33b88d4 = L.marker(
+                [48.8817377, 2.3079363],
+                {
+}
+            ).addTo(marker_cluster_ac9e00f33df0dea406c415a4b1fa3f85);
+        
+    
+            var icon_f366139247e043fa2576de613cb5d073 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_fa37b42c59565b88c856724df33b88d4.setIcon(icon_f366139247e043fa2576de613cb5d073);
+        
+    
+        var popup_ae5cccf411cb355ef19e29487605d68b = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_1836a885f418820f3800d84fe9f9bcff = $(`<div id="html_1836a885f418820f3800d84fe9f9bcff" style="width: 100.0%; height: 100.0%;"><b>SCI MURILLO (834 034 787)</b><br>7 RUE DE LOGELBACH, 75017 PARIS<br>Location de terrains et d'autres biens immobiliers<br>Non spécifié<br>Membres impliqués :<br><ul><li>François Perrodo</li><li>Bertrand Nicolas Hubert Perrodo (frère)</li></ul><a href="https://www.pappers.fr/entreprise/sci-murillo-834034787" target="_blank">Lien hypertexte</a></div>`)[0];
+                popup_ae5cccf411cb355ef19e29487605d68b.setContent(html_1836a885f418820f3800d84fe9f9bcff);
+            
+        
+
+        marker_fa37b42c59565b88c856724df33b88d4.bindPopup(popup_ae5cccf411cb355ef19e29487605d68b)
+        ;
+
+        
+    
+    
+            marker_cluster_ac9e00f33df0dea406c415a4b1fa3f85.addTo(map_05f524781faed2885a2edeb529d680fa);
+        
+</script>
+</html>
